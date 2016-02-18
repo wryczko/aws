@@ -1,6 +1,5 @@
 <h1>Zadania do szkolenia</h1>
 <a href="https://666786091374.signin.aws.amazon.com/console">Link do AWS</a>
-<h3>FPTrainingUser[1-15]/SilneHasłoFP</h3> 
 <h2>Zadanie 1 - PIERWSZA USŁUGA</h2>
 <ol>
 	<li>Zaloguj się do AWS Console i wybierz usługę EC2</li>
