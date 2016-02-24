@@ -142,7 +142,7 @@
 					<li>Wybierz mocniejszą maszynę (np. m4.4xlarge)</li>
 				</ul>
 			</li>
-			<li>Reszta kroków jak w zadaniu 1<li>
+			<li>Reszta kroków jak w zadaniu 1</li>
 			<li>Tym razem nie musisz tworzyć nowego pliku-klucza. Możesz wybrać istniejący.</li>
 		</ul>
 	</li>
