@@ -185,7 +185,27 @@
 		</ul>
 	</li>
 </ol>
-<h2>ZADANIE 3 – SECURITY GROUPS - FIREWALL</h2>
+<h2>ZADANIE 3 – ZAŁADUJ I UDOSTĘPNIJ PLIK</h2>
+<ol>
+	<li>Pobierz pliki z morpheusza (test{X}MB oraz downloader.exe)</li>
+	<li>Wybierz usługę S3 (kategoria "Storage & Content Delivery")</li>
+	<li>Utwórz bucket w odległym regionie (np. Tokyo, Singapour)</li>
+	<li>Załaduj plik testowy do wiadra</li>
+	<li>Upublicznij go (make public)</li>
+	<li>Odpytaj bucket narzędziem ping i zapisz czas odpowiedzi</li>
+	<li>Pobierz za pomocą downloadera i zapisz czas pobrania</li>
+</ol>
+<h2>ZADANIE 4 – ROZPROSZ PLIK PO CAŁYM ŚWIECIE</h2>
+<ol>
+	<li>Wybierz usługę CloudFront (kategoria "Storage & Content Delivery")</li>
+	<li>Kliknij „Create Distribution” i wybierz „Web”</li>
+	<li>Podaj bucket S3 jako origin i kliknij „Create”</li>
+	<li>Załaduj plik testowy do wiadra</li>
+	<li>Odczekaj 15 minut (przerwa na kawę)</li>
+	<li>Odpytaj distibution narzędziem ping i zapisz czas odpowiedzi</li>
+	<li>Pobierz za pomocą downloadera i zapisz czas pobrania</li>
+</ol>
+<h2>ZADANIE 5 – SECURITY GROUPS - FIREWALL</h2>
 <ol>
 	<li>Utwórz Security Group
 		<ul>
@@ -220,26 +240,6 @@
 		</ul>
 	</li>
 	<li>Sprawdź czy przypisanie nowych zasad przepuszcza pakiety ICMP</li>
-</ol>
-<h2>ZADANIE 4 – ZAŁADUJ I UDOSTĘPNIJ PLIK</h2>
-<ol>
-	<li>Pobierz pliki z morpheusza (test{X}MB oraz downloader.exe)</li>
-	<li>Wybierz usługę S3 (kategoria "Storage & Content Delivery")</li>
-	<li>Utwórz bucket w odległym regionie (np. Tokyo, Singapour)</li>
-	<li>Załaduj plik testowy do wiadra</li>
-	<li>Upublicznij go (make public)</li>
-	<li>Odpytaj bucket narzędziem ping i zapisz czas odpowiedzi</li>
-	<li>Pobierz za pomocą downloadera i zapisz czas pobrania</li>
-</ol>
-<h2>ZADANIE 5 – ROZPROSZ PLIK PO CAŁYM ŚWIECIE</h2>
-<ol>
-	<li>Wybierz usługę CloudFront (kategoria "Storage & Content Delivery")</li>
-	<li>Kliknij „Create Distribution” i wybierz „Web”</li>
-	<li>Podaj bucket S3 jako origin i kliknij „Create”</li>
-	<li>Załaduj plik testowy do wiadra</li>
-	<li>Odczekaj 15 minut (przerwa na kawę)</li>
-	<li>Odpytaj distibution narzędziem ping i zapisz czas odpowiedzi</li>
-	<li>Pobierz za pomocą downloadera i zapisz czas pobrania</li>
 </ol>
 <h2>ZADANIE 6 – SKALOWANIE WERTYKALNE (WSZERZ)</h2>
 <ol>
