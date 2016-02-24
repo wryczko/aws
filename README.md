@@ -174,4 +174,16 @@
 		</ul>
 	</li>
 	<li>Porównaj wyniki obu testów maszyn wirtualnych (słabszej i mocniejszej)</li>
+	<li>Usuń słabszą maszynę (posprzątaj)
+		<ul>
+			<li>Przejdź do listy instancji</li>
+			<li>Zaznacz swoją starą (słabszą) instancję</li>
+			<li>Kliknij szary przycisk "Actions" (nad listą) lub kliknij prawym przyciskiem myszy na instancję</li>
+			<li>Wybierz opcję "Instance State"->"Terminate"</li>
+		</ul>
+	</li>
+</ol>
+<h2>ZADANIE 3 – SECURITY GROUPS - FIREWALL</h2>
+<ol>
+	<li></li>
 </ol>
