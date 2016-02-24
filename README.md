@@ -128,24 +128,22 @@
 	</li>
 	<li>Utwórz maszynę wirtualną z obrazu AMI
 		<ul>
-			<li>
-				<li>Przejdź do listy instancji</li>
-				<li>Kliknij „Launch Instance”</li>
-				<li>Step 1: Choose an Amazon Machine Image (AMI)
-					<ul>
-						<li>Wybierz z lewego panelu "My AMIs"</li>
-						<li>Znajdź swój nowoutworzony obraz</li>
-						<li>Kliknij niebieski przycisk "Select"</li>
-					</ul>
-				</li>
-				<li>Step 2: Choose an Instance Type
-					<ul>
-						<li>Wybierz mocniejszą maszynę (np. m4.4xlarge)</li>
-					</ul>
-				</li>
-				<li>Reszta kroków jak w zadaniu 1<li>
-				<li>Tym razem nie musisz tworzyć nowego pliku-klucza. Możesz wybrać istniejący.</li>
+			<li>Przejdź do listy instancji</li>
+			<li>Kliknij „Launch Instance”</li>
+			<li>Step 1: Choose an Amazon Machine Image (AMI)
+				<ul>
+					<li>Wybierz z lewego panelu "My AMIs"</li>
+					<li>Znajdź swój nowoutworzony obraz</li>
+					<li>Kliknij niebieski przycisk "Select"</li>
+				</ul>
 			</li>
+			<li>Step 2: Choose an Instance Type
+				<ul>
+					<li>Wybierz mocniejszą maszynę (np. m4.4xlarge)</li>
+				</ul>
+			</li>
+			<li>Reszta kroków jak w zadaniu 1<li>
+			<li>Tym razem nie musisz tworzyć nowego pliku-klucza. Możesz wybrać istniejący.</li>
 		</ul>
 	</li>
 	<li>Zacznij sprawdzać dostępność maszyny wirtualnej
