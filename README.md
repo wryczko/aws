@@ -4,7 +4,7 @@
 <h2>Zadanie 1 - Pierwsza usługa - maszyna wirtualna</h2>
 <ol>
 	<li>Zaloguj się do AWS Console (użyj linku powyżej)</li>
-	<li>Przełącz się na region Ireland lub Frankfurt (prawy górny róg)</li>
+	<li>Przełącz się na region Ireland (prawy górny róg)</li>
 	<li>Z listy usług AWS wybierz EC2 (sekcja "Compute")</li>
 	<li>Wybierz „Instances” lub "Running instances", a następnie „Launch Instance”</li>
 	<li>Dobierz konfigurację
