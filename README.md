@@ -1,5 +1,6 @@
 <h1>Zadania do szkolenia</h1>
-<a href="https://666786091374.signin.aws.amazon.com/console">Link do AWS</a>
+<a href="https://console.aws.amazon.com">Link do AWS jako Account Owner</a>
+<a href="https://666786091374.signin.aws.amazon.com/console">Link do "subdomeny" AWS (dla użytkowników stworzonych przez Account Ownera)</a>
 <h2>Zadanie 1 - Pierwsza usługa - maszyna wirtualna</h2>
 <ol>
 	<li>Zaloguj się do AWS Console (użyj linku powyżej)</li>
@@ -180,10 +181,42 @@
 			<li>Zaznacz swoją starą (słabszą) instancję</li>
 			<li>Kliknij szary przycisk "Actions" (nad listą) lub kliknij prawym przyciskiem myszy na instancję</li>
 			<li>Wybierz opcję "Instance State"->"Terminate"</li>
+			<li>Potwierdź działanie klikając niebieski przycisk "Yes, terminate"</li>
 		</ul>
 	</li>
 </ol>
 <h2>ZADANIE 3 – SECURITY GROUPS - FIREWALL</h2>
 <ol>
-	<li></li>
+	<li>Utwórz Security Group
+		<ul>
+			<li>Przejdź do usługi EC2</li>
+			<li>Z panelu po lewej stronie wybierz "Security Groups" (zakładka "NETWORK & SECURITY")</li>
+			<li>Kliknij niebieski przycisk "Create Security Group"</li>
+			<li>Nadaj nazwę oraz opis</li>
+			<li>Kliknij niebieski przycisk "Create"</li>
+		</ul>
+	</li>
+	<li>Skonfiguruj Security Group
+		<ul>
+			<li>Znajdź i zaznacz nowoutworzone Security Group</li>
+			<li>Kliknij szary przycisk "Actions" lub kliknij prawym przyciskiem myszyny na Security Group</li>
+			<li>Wybierz opcję "Edit inbound rules" lub kliknij "Edit" w zakładce "Inbound" w panelu na dole</li>
+			<li>Wybierz Type "RDP"</li>
+			<li>Wybierz Source "My IP"</li>
+			<li>Kliknij niebieski przycisk "Save"</li>
+		</ul>
+	</li>
+	<li>Zacznij wysyłać pakiety ICMP do EC2 (ping -t)</li>
+	<li>Przypisz nowe Security Group do EC2
+		<ul>
+			<li>Przejdź do listy instancji</li>
+			<li>Zaznacz swoją (jedyną) instancję</li>
+			<li>Kliknij szary przycisk "Actions" (nad listą) lub kliknij prawym przyciskiem myszy na instancję</li>
+			<li>Wybierz opcję "Networking"->"Change Security Groups"</li>
+			<li>Odznacz domyślne Security Group</li>
+			<li>Zaznacz nowoutworzone Security Group</li>
+			<li>Kliknij niebieski przycisk "Assign Security Groups"</li>
+		</ul>
+	</li>
+	<li>Sprawdź czy przypisanie nowych zasad zablokowało pakiety ICMP (propagacja zmian w SG trwa 5 min)</li>
 </ol>
