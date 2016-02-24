@@ -4,7 +4,7 @@
 <ol>
 	<li>Zaloguj się do AWS Console (użyj linku powyżej)</li>
 	<li>Przełącz się na region Ireland lub Frankfurt (prawy górny róg)</li>
-	<li>Z listy usług wybierz EC2 (lewy górny róg)</li>
+	<li>Z listy usług AWS wybierz EC2 (sekcja "Compute")</li>
 	<li>Wybierz „Instances” lub "Running instances", a następnie „Launch Instance”</li>
 	<li>Dobierz konfigurację
 		<ul>
@@ -63,9 +63,10 @@
 	</li>
 	<li>Kliknij niebieski przycisk "Launch Instances"</li>
 	<li>Przejdź do listy instancji np. klikając w niebieski przycisk "View Instances"</li>
-	<li>Znajdź swoją maszynę wirtualną i kliknij szary przycisk „Connect” (nad listą instancji)</li>
-	<li>Connect To Your Instance
+	<li>Zaloguj się do swojej maszyny wirtualnej
 		<ul>
+			<li>Znajdź i zaznacz swoją maszynę wirtualną</li>
+			<li>Kliknij szary przycisk „Connect” (nad listą instancji)</li>
 			<li>Pobierz plik RDP klikając w szary przycisk "Download Remote Desktop File"</li>
 			<li>Pobierz hasło
 				<ul>
@@ -79,15 +80,100 @@
 				</ul>
 			</li>
 			<li>Użyj pobranego pliku RDP i hasła do zalogowania się na maszynę wirtualną</li>
+			<li>Używaj maszyny wirtualnej w dowolnym celu</li>
 		</ul>
 	</li>
 </ol>
 <h2>ZADANIE 2 – SKALOWANIE W GÓRĘ</h2>
 <ol>
-	<li>Zaalokuj nowy adres publiczny (EIP)</li>
-	<li>Podepnij EIP do istniejącej instancji i sprawdź jej dostępność</li>
-	<li>Zmień zawartość dysku (np. utworzyć plik na pulpicie)</li>
-	<li>Utwórz obraz istniejącej maszyny wirtualnej (AMI)</li>
-	<li>Skonfiguruj nową większą instację EC2 korzystając z nowopowstałego obrazu</li>
-	<li>Zaloguj się do maszyny przez RDP (hasło z oryginału)</li>
+	<li>Zaalokuj nowy adres publiczny (EIP)
+		<ul>
+			<li>Z listy usług AWS wybierz EC2 (lewy górny róg)</li>
+			<li>Z panelu po lewej stronie wybierz "Elastic IPs" (zakładka "NETWORK & SECURITY")</li>
+			<li>Kliknij niebieski przycisk "Allocate New Address"</li>
+			<li>Potwierdź zamiar klikając niebieski przycisk "Yes, Allocate"</li>
+			<li>Zamknij okno klikając niebieski przycisk "Close"</li>
+		</ul>
+	</li>
+	<li>Podepnij EIP do istniejącej instancji
+		<ul>
+			<li>Zaznacz nowoutworzony EIP</li>
+			<li>Kliknij szary przycisk "Actions" (nad listą) lub kliknij prawym przyciskiem myszy na EIP</li>
+			<li>Wybierz opcję "Associate Address"</li>
+			<li>Kliknij w textbox "Instance", znajdź i wybierz swoją instancję</li>
+			<li>Kliknij niebieski przycisk "Associate"</li>
+		</ul>
+	</li>
+	<li>Sprawdź wydajność swojej maszyny wirtualnej
+		<ul>
+			<li>Pobierz plik "benchmark.exe" z "\\morpheus\pub-Transfer\w\wryczko\FP_AWS_Training\benchmark.exe"
+			<li>Zaloguj się do maszyny wirtualnej (opis w zadaniu 1)</li>
+			<li>Skopiuj i odpal plik benchmark.exe z liczbą iteracji (domyślnie 10)</li>
+			<li>Na maszynie m4.large test trwa niecałą minutę</li>
+			<li>Zapisz czas wykonania programu</li>
+		</ul>
+	</li>
+	<li>Utwórz obraz maszyny wirtualnej (AMI)
+		<ul>
+			<li>Przejdź do listy instancji</li>
+			<li>Zaznacz swoją instancję</li>
+			<li>Kliknij szary przycisk "Actions" (nad listą) lub kliknij prawym przyciskiem myszy na instancję</li>
+			<li>Wybierz opcję "Image"->"Create Image"</li>
+			<li>W polu "Instance name" wpisz dowolną nazwę obrazu</li>
+			<li>Kliknij niebieski przycisk "Create Image"</li>
+			<li>Zamknij okno klikając niebieski przycisk "Close"</li>
+			<li>Przejdź do listy utworzonych obrazów klikając na panelu z lewej strony "AMIs" (zakładka "IMAGES")</li>
+			<li>Poczekaj aż obraz będzie gotowy (3-4 min)</li>
+		</ul>
+	</li>
+	<li>Utwórz maszynę wirtualną z obrazu AMI
+		<ul>
+			<li>
+				<li>Przejdź do listy instancji</li>
+				<li>Kliknij „Launch Instance”</li>
+				<li>Step 1: Choose an Amazon Machine Image (AMI)
+					<ul>
+						<li>Wybierz z lewego panelu "My AMIs"</li>
+						<li>Znajdź swój nowoutworzony obraz</li>
+						<li>Kliknij niebieski przycisk "Select"</li>
+					</ul>
+				</li>
+				<li>Step 2: Choose an Instance Type
+					<ul>
+						<li>Wybierz mocniejszą maszynę (np. m4.4xlarge)</li>
+					</ul>
+				</li>
+				<li>Reszta kroków jak w zadaniu 1<li>
+				<li>Tym razem nie musisz tworzyć nowego pliku-klucza. Możesz wybrać istniejący.</li>
+			</li>
+		</ul>
+	</li>
+	<li>Zacznij sprawdzać dostępność maszyny wirtualnej
+		<ul>
+			<li>Sprawdź adres IP (EIP)</li>
+			<li>Na lokalnym komputerze odpal command line</li>
+			<li>Użyj narzędzia ping: "ping {IP} -t"</li>
+			<li>Nie zamykaj konsoli do końca zadania</li>
+		</ul>
+	</li>
+	<li>Przełącz EIP (publiczny IP) między maszynami wirtualnymi
+		<ul>
+			<li>Przejdź do listy EIP</li>
+			<li>Kliknij szary przycisk "Actions" (nad listą) lub kliknij prawym przyciskiem myszy na EIP</li>
+			<li>Wybierz opcję "Associate Address"</li>
+			<li>Kliknij w textbox "Instance", znajdź i wybierz swoją nową (mocniejszą) instancję</li>
+			<li>Zaznacz opcje "Reassociation"</li>
+			<li>Kliknij niebieski przycisk "Associate"</li>
+		</ul>
+	</li>
+	<li>Zaobserwuj w command line, czy użytkownik odczuje "skalowanie"</li>
+	<li>Sprawdź wydajność swojej nowej (mocniejszej) maszyny wirtualnej
+		<ul>
+			<li>Zaloguj się do maszyny przez RDP (jeżeli nie tworzyłeś nowego klucza, to hasło jest takie samo jak na starej maszynie)</li>
+			<li>Zauważ, że plik "benchmark.exe" już się tam znajduje</li>
+			<li>Odpal plik benchmark.exe z liczbą iteracji jak na pierwszej maszynie (domyślnie 10)</li>
+			<li>Zapisz czas wykonania programu</li>
+		</ul>
+	</li>
+	<li>Porównaj wyniki obu testów maszyn wirtualnych (słabszej i mocniejszej)</li>
 </ol>
