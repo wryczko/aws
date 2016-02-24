@@ -196,16 +196,6 @@
 			<li>Kliknij niebieski przycisk "Create"</li>
 		</ul>
 	</li>
-	<li>Skonfiguruj Security Group
-		<ul>
-			<li>Znajdź i zaznacz nowoutworzone Security Group</li>
-			<li>Kliknij szary przycisk "Actions" lub kliknij prawym przyciskiem myszyny na Security Group</li>
-			<li>Wybierz opcję "Edit inbound rules" lub kliknij "Edit" w zakładce "Inbound" w panelu na dole</li>
-			<li>Wybierz Type "RDP"</li>
-			<li>Wybierz Source "My IP"</li>
-			<li>Kliknij niebieski przycisk "Save"</li>
-		</ul>
-	</li>
 	<li>Zacznij wysyłać pakiety ICMP do EC2 (ping -t)</li>
 	<li>Przypisz nowe Security Group do EC2
 		<ul>
@@ -218,5 +208,16 @@
 			<li>Kliknij niebieski przycisk "Assign Security Groups"</li>
 		</ul>
 	</li>
-	<li>Sprawdź czy przypisanie nowych zasad zablokowało pakiety ICMP (propagacja zmian w SG trwa 5 min)</li>
+	<li>Sprawdź czy przypisanie nowych zasad przepuszcza pakiety ICMP (propagacja odebrania dostępu w SG trwa 5 min, restart vm i nadanie praw daje natychmiastowy efekt)</li>
+	<li>Skonfiguruj Security Group
+		<ul>
+			<li>Znajdź i zaznacz nowoutworzone Security Group</li>
+			<li>Kliknij szary przycisk "Actions" lub kliknij prawym przyciskiem myszyny na Security Group</li>
+			<li>Wybierz opcję "Edit inbound rules" lub kliknij "Edit" w zakładce "Inbound" w panelu na dole</li>
+			<li>Wybierz Type "All ICMP"</li>
+			<li>Wybierz Source "My IP"</li>
+			<li>Kliknij niebieski przycisk "Save"</li>
+		</ul>
+	</li>
+	<li>Sprawdź czy przypisanie nowych zasad przepuszcza pakiety ICMP</li>
 </ol>
