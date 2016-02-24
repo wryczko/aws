@@ -15,13 +15,13 @@
 					<li>Kliknij niebieski przycisk "Select"</li>
 				</ul>
 			</li>
-			<li>Step 2: Choose an Instance Type: coś z dwoma rdzeniami i min 3GB ramu (np. m4.large, c4.large)
+			<li>Step 2: Choose an Instance Type
 				<ul>
 					<li>Znajdź i zaznacz typ/moc instancji "m4.large" (szósta od góry)</li>
 					<li>Kliknij szary przycisk "Next: Configure Instance Details"</li>
 				</ul>
 			</li>
-			<li>Step 3: Configure Instance Details: wszystko domyślnie
+			<li>Step 3: Configure Instance Details
 				<ul>
 					<li>Zostaw wszystko domyślnie</li>
 					<li>Kliknij szary przycisk "Next: Add Storage"</li>
@@ -33,7 +33,7 @@
 					<li>Kliknij szary przycisk "Next: Tag Instance"</li>
 				</ul>
 			</li>
-			<li>Step 5: Tag Instance: w polu "value" podaj nazwę swojej maszyny
+			<li>Step 5: Tag Instance
 				<ul>
 					<li>W polu "value" podaj nazwę swojej maszyny (będzie potrzebna do indentyfikacji na liście)</li>
 					<li>Kliknij szary przycisk "Next: Configure Security Group"</li>
