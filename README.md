@@ -325,7 +325,7 @@
 					</ul>
 					<li>Step 2: Assign Security Groups</li>
 					<ul>
-						<li>Wybierz opcję "Select an <br>existing</br> security group"</li>
+						<li>Wybierz opcję "Select an existing security group"</li>
 						<li>Zaznacz nowoutworzone Security Group z punktu 1</li>
 						<li>Kliknij w szary przycisk "Next: Configure Security Settings" w prawym dolnym rogu</li>
 					</ul>
