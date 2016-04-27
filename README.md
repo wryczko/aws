@@ -187,13 +187,51 @@
 </ol>
 <h2>ZADANIE 3 – ZAŁADUJ I UDOSTĘPNIJ PLIK</h2>
 <ol>
-	<li>Pobierz pliki z morpheusza (test{X}MB oraz downloader.exe)</li>
-	<li>Wybierz usługę S3 (kategoria "Storage & Content Delivery")</li>
-	<li>Utwórz bucket w odległym regionie (np. Tokyo, Singapour)</li>
-	<li>Załaduj plik testowy do wiadra</li>
-	<li>Upublicznij go (make public)</li>
-	<li>Odpytaj bucket narzędziem ping i zapisz czas odpowiedzi</li>
-	<li>Pobierz za pomocą downloadera i zapisz czas pobrania</li>
+	<li>Pobierz pliki testowe
+		<ul>
+			<li>Wejdź na \\morpheus\pub-Transfer\w\wryczko\FP_AWS_Training</li>
+			<li>Skopiuj na lokalny komputer plik test10MB.dat</li>
+			<li>Skopiuj na lokalny komputer plik downloader.exe</li>
+		</ul>
+	</li>
+	<li>Przygotuj usługę S3
+		<ul>
+			<li>Z listy usług AWS wybierz S3 (kategoria "Storage & Content Delivery")</li>
+			<li>Kliknij w niebieski przycisk "Create Bucket" w lewym górnym rogu</li>
+			<li>W polu "Bucket Name" podaj unikalną (na skalę AWS) nazwę bucketa</li>
+			<li>Wybierz jakiś odległy region (np. Sydney, Tokyo)</li>
+			<li>Kliknij w niebieski przycisk "Create"</li>
+		</ul>
+	</li>
+	<li>Wgraj plik testowy do usługi S3 i udostępnij
+		<ul>
+			<li>Otwórz bucket (kliknij w jego nazwę na liście)<li>
+			<li>Kliknij w niebieski przycisk "Upload" w lewym górnym rogu<li>
+			<li>Kilknij w przycisk "Add files" (zielona ikona z plusem)</li>
+			<li>Znajdź i wybierz pobrany plik test10MB.dat</li>
+			<li>Kliknij szary przycisk "Start Upload" w prawym dolnym rogu</li>
+			<li>Poczekaj aż plik zostanie załadowany do usługi S3</li>
+			<li>Kliknij prawym przyciskiem myszy na plik i wybierz opcję "Make Public"</li>
+		</ul>
+	</li>
+	<li>Przeprowadź test czasu odpowiedzi
+		<ul>			
+			<li>Kliknij lewym przyciskiem myszy w plik w bucketcie</li>
+			<li>Wybierz szarą zakładkę 'Properties' w prawy górnym rogu</li>
+			<li>Znajdź i skopiuj link o pliku</li>
+			<li>Wydziel z linku hosta (np. s3.eu-central-1.amazonaws.com)</li>
+			<li>Otwórz 'CMD'</li>
+			<li>Odpytaj host bucketa narzędziem ping (np. ping s3-website-eu-west-1.amazonaws.com)</li>
+			<li>Zapisz czas odpowiedzi</li>
+		</ul>
+	</li>
+	<li>Przeprowadź test prędkości pobierania
+		<ul>
+			<li>Przygotuj link do pliku</li>
+			<li>Pobierz plik za pomocą downloadera (np. downloader.exe http://s3-eu-west-1.amazonaws.com/fptrainingaws/FPTrainingAWS.zip)</li>
+			<li>Zapisz średniony czas pobrania</li>
+		</ul>
+	</li>
 </ol>
 <h2>ZADANIE 4 – ROZPROSZ PLIK PO CAŁYM ŚWIECIE</h2>
 <ol>
