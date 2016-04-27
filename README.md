@@ -303,7 +303,7 @@
 	<li>Przygotuj Security Groupy
 		<ul>
 			<li>Stwórz Security Group dla Load Balancera z otwarym portem 80 dla wszystkich</li>
-			<li>Stwórz Security Group dla EC2 z otwartym portem 80 tylko dla Security Groupy Load Balancera (z poprzedniego kroku)</li>
+			<li>Stwórz Security Group dla EC2 z otwartym portem 80 tylko dla Security Groupy Load Balancera z poprzedniego kroku</li>
 		</ul>
 	</li>
 	<li>Przygotuj dwa EC2
