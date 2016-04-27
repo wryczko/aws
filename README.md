@@ -218,7 +218,7 @@
 		<ul>			
 			<li>Kliknij lewym przyciskiem myszy w plik w bucketcie</li>
 			<li>Wybierz szarą zakładkę 'Properties' w prawy górnym rogu</li>
-			<li>Znajdź i skopiuj link o pliku</li>
+			<li>Znajdź i skopiuj link do pliku</li>
 			<li>Wydziel z linku hosta (np. s3.eu-central-1.amazonaws.com)</li>
 			<li>Otwórz 'CMD'</li>
 			<li>Odpytaj host bucketa narzędziem ping (np. ping s3-website-eu-west-1.amazonaws.com)</li>
