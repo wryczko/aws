@@ -318,40 +318,40 @@
 			<li>Z panelu po lewej wybierz "Load balancers" (zakładka "Load balancing")</li>
 			<li>Kliknij w niebieski przycisk "Create Load Balancer" w lewym górnym rogu</li>
 				<ol>
-					<li>Step 1: Define Load Balancer<li>
+					<li>Step 1: Define Load Balancer</li>
 					<ul>
 						<li>W polu "Load Balancer name" wpisz wymaganą nazwę</li>
 						<li>Kliknij w szary przycisk "Next: Assign Security Groups" w prawym dolnym rogu</li>
 					</ul>
-					<li>Step 2: Assign Security Groups<li>
+					<li>Step 2: Assign Security Groups</li>
 					<ul>
 						<li>Wybierz opcję "Select an <br>existing</br> security group"</li>
 						<li>Zaznacz nowoutworzone Security Group z punktu 1</li>
 						<li>Kliknij w szary przycisk "Next: Configure Security Settings" w prawym dolnym rogu</li>
 					</ul>
-					<li>Step 3: Configure Security Settings<li>
+					<li>Step 3: Configure Security Settings</li>
 					<ul>
 						<li>Pomiń ten krok na potrzeby szkolenia</li>
 						<li>Kliknij w szary przycisk "Next: Configure Health Check" w prawym dolnym rogu</li>
 					</ul>
-					<li>Step 4: Configure Health Check<li>
+					<li>Step 4: Configure Health Check</li>
 					<ul>
 						<li>W polu "Ping Path" wpisz adres głównej strony, czyli w naszym przypdku slash "/"</li>
 						<li>W polu "Health Check Interval" wpisz "10"</li>
 						<li>W polu "Healthy Threshold" wybierz "2"</li>
 						<li>Kliknij w szary przycisk "Next: Add EC2 Instances" w prawym dolnym rogu</li>
 					</ul>
-					<li>Step 5: Add EC2 Instances<li>
+					<li>Step 5: Add EC2 Instances</li>
 					<ul>
 						<li>Z listy dostępnych EC2 wybierz te dwie utworzone w punkcie 2</li>
 						<li>Kliknij w szary przycisk "Next: Add Tags" w prawym dolnym rogu</li>
 					</ul>
-					<li>Step 6: Add Tags<li>
+					<li>Step 6: Add Tags</li>
 					<ul>
 						<li>(opcjonalnie) Analogicznie jak podczas tworzenia EC2 należy podać np. nazwę instacji</li>
 						<li>Kliknij w niebieski przycisk "Review and Create" w prawym dolnym rogu</li>
 					</ul>
-					<li>Step 7: Review<li>
+					<li>Step 7: Review</li>
 					<ul>
 						<li>(opcjonalnie) Przejrzyj podsumowanie konfiguracji Load Balancera</li>
 						<li>Kliknij w niebieski przycisk "Create" w prawym dolnym rogu</li>
