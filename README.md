@@ -205,8 +205,8 @@
 	</li>
 	<li>Wgraj plik testowy do usługi S3 i udostępnij
 		<ul>
-			<li>Otwórz bucket (kliknij w jego nazwę na liście)<li>
-			<li>Kliknij w niebieski przycisk "Upload" w lewym górnym rogu<li>
+			<li>Otwórz bucket (kliknij w jego nazwę na liście)</li>
+			<li>Kliknij w niebieski przycisk "Upload" w lewym górnym rogu</li>
 			<li>Kilknij w przycisk "Add files" (zielona ikona z plusem)</li>
 			<li>Znajdź i wybierz pobrany plik test10MB.dat</li>
 			<li>Kliknij szary przycisk "Start Upload" w prawym dolnym rogu</li>
@@ -228,8 +228,8 @@
 	<li>Przeprowadź test prędkości pobierania
 		<ul>
 			<li>Przygotuj link do pliku</li>
-			<li>Pobierz plik za pomocą downloadera (np. downloader.exe http://s3-eu-west-1.amazonaws.com/fptrainingaws/FPTrainingAWS.zip)</li>
-			<li>Zapisz średniony czas pobrania</li>
+			<li>Pobierz kilka razy plik za pomocą downloadera (np. downloader.exe http://s3-eu-west-1.amazonaws.com/fptrainingaws/FPTrainingAWS.zip)</li>
+			<li>Zapisz średniony czas pobierania</li>
 		</ul>
 	</li>
 </ol>
