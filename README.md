@@ -235,13 +235,32 @@
 </ol>
 <h2>ZADANIE 4 – ROZPROSZ PLIK PO CAŁYM ŚWIECIE</h2>
 <ol>
-	<li>Wybierz usługę CloudFront (kategoria "Storage & Content Delivery")</li>
-	<li>Kliknij „Create Distribution” i wybierz „Web”</li>
-	<li>Podaj bucket S3 jako origin i kliknij „Create”</li>
-	<li>Załaduj plik testowy do wiadra</li>
-	<li>Odczekaj 15 minut (przerwa na kawę)</li>
-	<li>Odpytaj distibution narzędziem ping i zapisz czas odpowiedzi</li>
-	<li>Pobierz za pomocą downloadera i zapisz czas pobrania</li>
+	<li>Przygotuj usługę CloudFront
+		<ul>
+			<li>Wybierz usługę CloudFront (kategoria "Storage & Content Delivery")</li>
+			<li>Kliknij w niebieski przycisk „Create Distribution” w lewym górnym rogu</li>
+			<li>Kliknij w niebieski przycisk "Get Started" pod wersją „Web”</li>
+			<li>W polu "Origin Domain Name" wybierz bucket S3 (utworzony w poprzednim zadaniu)</li>
+			<li>Resztę konfiguracji zostaw domyślną</li>
+			<li>Kliknij w niebieski przycisk „Create Distribution” w prawym dolnym rogu</li>	
+		</ul>
+	</li>
+	<li>Odczekaj minimum 15 minut (przerwa na kawę)</li>
+	<li>Przeprowadź test czasu odpowiedzi
+		<ul>
+			<li>Znajdź i skopiuj adres hosta CloudFront ("Domain Name")</li>
+			<li>Otwórz 'CMD'</li>
+			<li>Odpytaj host CloudFronta narzędziem ping (np. ping d30wp07u6aouly.cloudfront.net)</li>
+			<li>Zapisz czas odpowiedzi</li>
+		</ul>
+	</li>
+	<li>Przeprowadź test prędkości pobierania
+		<ul>
+			<li>Doklei do adresu hosta CloudFronta nazwę pliku (bez nazwy bucketa S3)</li>
+			<li>Pobierz kilka razy plik za pomocą downloadera (np. downloader.exe http://d30wp07u6aouly.cloudfront.net/FPTrainingAWS.zip)</li>
+			<li>Zapisz średniony czas pobierania</li>
+		</ul>
+	</li>
 </ol>
 <h2>ZADANIE 5 – SECURITY GROUPS - FIREWALL</h2>
 <ol>
