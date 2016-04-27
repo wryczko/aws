@@ -300,13 +300,31 @@
 </ol>
 <h2>ZADANIE 6 – SKALOWANIE WERTYKALNE (WSZERZ)</h2>
 <ol>
-	<li>Wybierz usługę EC2</li>
-	<li>Z panelu po lewej wybierz "Load balancers" (zakładka "Load balancing")</li>
-	<li>Utwórz Load Balancer</li>
-	<li>Utwórz Security Group dla Load Balancera z otwarym portem 80 dla wszystkich</li>
-	<li>Utwórz dwa EC2 korzystając z obrazu AMI „SimpleELBImage” (region Ireland) lub „ELBExample” (region Frankfurt)</li>
-	<li>Utwórz Security Group dla maszyn wirtualnych z otwarym portem 80 tylko dla Security Group Load Balancera</li>
-	<li>Dołącz EC2 z punkt 2 do floty maszyn Load Balancera</li>
-	<li>Skorzystaj z usługi (otwórz w przeglądarce) korzystając z adresu Load Balancera</li>
-	<li>Odśwież kilka razy i zauważ zmieniające się adresy IP</li>
+	<li>Przygotuj Security Groupy
+		<ul>
+			<li>Stwórz Security Group dla Load Balancera z otwarym portem 80 dla wszystkich</li>
+			<li>Stwórz Security Group dla EC2 z otwarym portem 80 tylko dla Security Group Load Balancera</li>
+		</ul>
+	</li>
+	<li>Przygotuj dwa EC2
+		<ul>
+			<li>Stwórz EC2 wykorzystując obraz AMI „SimpleELBImage” (region Ireland) lub „ELBExample” (region Frankfurt)</li>
+			<li>Podczas tworzenia EC2 wybierz nowoutworzone Security Group (z punktu 1)</li>
+		</ul>
+	</li>
+	<li>Przygotuj Load Balancer
+		<ul>
+			<li>Wybierz usługę EC2</li>
+			<li>Z panelu po lewej wybierz "Load balancers" (zakładka "Load balancing")</li>
+			<li>Stwórz Load Balancer</li>
+			<li>Podczas tworzenia Load Balancera wybierz nowoutworzone Security Group (z punktu 1)</li>
+			<li>Dołącz EC2 z punkt 2 do listy maszyn Load Balancera</li>
+		</ul>
+	</li>
+	<li>Przetestuj Load Balancer
+		<ul>
+			<li>Skorzystaj z usługi (otwórz w przeglądarce) korzystając z adresu Load Balancera</li>
+			<li>Odśwież kilka razy i zauważ zmieniające się adresy IP</li>
+		</ul>
+	</li>
 </ol>
