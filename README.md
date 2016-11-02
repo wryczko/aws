@@ -298,7 +298,7 @@
 	</li>
 	<li>Sprawdź czy przypisanie nowych zasad przepuszcza pakiety ICMP</li>
 </ol>
-<h2>ZADANIE 6 – SKALOWANIE WERTYKALNE (WSZERZ)</h2>
+<h2>ZADANIE 6 – SKALOWANIE HORYZONTALNE (WSZERZ)</h2>
 <ol>
 	<li>Przygotuj Security Groupy
 		<ul>
