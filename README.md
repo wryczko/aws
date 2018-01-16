@@ -59,7 +59,8 @@
 		<ul>
 			<li>Wybierz "Create a new key pair"</li>
 			<li>Dowolnie nazwij klucz</li>
-			<li>Kliknij szary przycisk "Download Key Pair"</li>
+			<li>Kliknij szary przycisk "Create"</li>
+			<li>Zauważ, że został pobrany plik pem z kluczem</li>
 		</ul>
 	</li>
 	<li>Kliknij niebieski przycisk "Launch Instances"</li>
