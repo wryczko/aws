@@ -59,7 +59,7 @@
 		<ul>
 			<li>Wybierz "Create a new key pair"</li>
 			<li>Dowolnie nazwij klucz</li>
-			<li>Kliknij szary przycisk "Create"</li>
+			<li>Kliknij szary przycisk "Download key pair"</li>
 			<li>Zauważ, że został pobrany plik pem z kluczem</li>
 		</ul>
 	</li>
