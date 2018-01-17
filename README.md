@@ -309,7 +309,7 @@
 	</li>
 	<li>Przygotuj dwa EC2
 		<ul>
-			<li>Stwórz dwie EC2 wykorzystując obraz AMI „SimpleELBImage” (region Ireland) lub „ELBExample” (region Frankfurt)</li>
+			<li>Stwórz dwie EC2 wykorzystując obraz AMI „ObrazDoZadania6”</li>
 			<li>Podczas tworzenia EC2 wybierz nowoutworzone Security Group (z punktu 1)</li>
 		</ul>
 	</li>
