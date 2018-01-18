@@ -162,7 +162,7 @@
 	<li>Zacznij sprawdzać dostępność maszyny wirtualnej
 		<ul>
 			<li>Sprawdź adres IP (EIP)</li>
-			<li>Na lokalnym komputerze odpal command line</li>
+			<li>Na lokalnym komputerze uruchom command line (CMD)</li>
 			<li>Użyj narzędzia ping: "ping {IP} -t"</li>
 			<li>Nie zamykaj konsoli do końca zadania</li>
 		</ul>
@@ -209,8 +209,8 @@
 	<li>Pobierz pliki testowe
 		<ul>
 			<li>Wejdź na \\morpheus\pub-Transfer\w\wryczko\FP_AWS_Training</li>
-			<li>Skopiuj na lokalny komputer plik test10MB.dat</li>
-			<li>Skopiuj na lokalny komputer plik downloader.exe</li>
+			<li>Skopiuj na lokalny komputer plik "50MB.dat"</li>
+			<li>Skopiuj na lokalny komputer plik "downloader.exe"</li>
 		</ul>
 	</li>
 	<li>Przygotuj usługę S3
@@ -256,7 +256,7 @@
 				<li>Select files
 					<ul>
 						<li>Kliknij "Add files"</li>
-						<li>Wybierz plik "10MB.dat"</li>
+						<li>Wybierz plik "50MB.dat"</li>
 						<li>Kliknij niebieski przycisk "Next"</li>
 					</ul>
 				</li>
@@ -283,20 +283,20 @@
 	</li>
 	<li>Przeprowadź test czasu odpowiedzi
 		<ul>			
-			<li>Kliknij lewym przyciskiem myszy w plik w bucketcie</li>
-			<li>Wybierz szarą zakładkę 'Properties' w prawy górnym rogu</li>
-			<li>Znajdź i skopiuj link do pliku</li>
-			<li>Wydziel z linku hosta (np. s3.eu-central-1.amazonaws.com)</li>
-			<li>Otwórz 'CMD'</li>
+			<li>Kliknij lewym przyciskiem myszy w plik w bucket'cie</li>
+			<li>Kliknij na plik</li>
+			<li>Skopiuj link do pliku (jest na samym dole)</li>
+			<li>Wydziel z linku domenę (np. s3.ap-northeast-2.amazonaws.com)</li>
+			<li>Otwórz na komputerze lokalnym command line (CMD)</li>
 			<li>Odpytaj host bucketa narzędziem ping (np. ping s3-website-eu-west-1.amazonaws.com)</li>
 			<li>Zapisz czas odpowiedzi</li>
 		</ul>
 	</li>
 	<li>Przeprowadź test prędkości pobierania
 		<ul>
-			<li>Przygotuj link do pliku</li>
-			<li>Pobierz kilka razy plik za pomocą downloadera (np. downloader.exe http://s3-eu-west-1.amazonaws.com/fptrainingaws/FPTrainingAWS.zip)</li>
-			<li>Zapisz średni czas pobierania</li>
+			<li>Przygotuj link do pliku (NIE samej domeny)</li>
+			<li>Pobierz kilka razy plik za pomocą downloadera (np. downloader.exe https://s3-eu-west-1.amazonaws.com/fptrainingaws/50MB.dat)</li>
+			<li>Zapisz najniższy czas pobierania</li>
 		</ul>
 	</li>
 </ol>
