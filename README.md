@@ -4,20 +4,20 @@
 <h2>Zadanie 1 - Pierwsza usługa - maszyna wirtualna</h2>
 <ol>
 	<li>Zaloguj się do AWS Console (użyj linku powyżej)</li>
-	<li>Przełącz się na region Ireland (prawy górny róg)</li>
-	<li>Z listy usług AWS wybierz EC2 (sekcja "Compute")</li>
+	<li>Przełącz się na jeden z regionów europejskich (prawy górny róg)</li>
+	<li>Z listy usług AWS ("Services" lewy górny róg) wybierz EC2 (sekcja "Compute")</li>
 	<li>Wybierz „Instances” lub "Running instances", a następnie „Launch Instance”</li>
 	<li>Dobierz konfigurację
 		<ul>
-			<li>Step 1: Choose an Amazon Machine Image (AMI): "Windows Server 2012 R2 Base" (piąta od góry)
+			<li>Step 1: Choose an Amazon Machine Image (AMI)
 				<ul>
-					<li>Znajdź "Windows Server 2012 R2 Base" (piąty obraz od góry)</li>
+					<li>Znajdź "Windows Server 2012 R2 Base"</li>
 					<li>Kliknij niebieski przycisk "Select"</li>
 				</ul>
 			</li>
 			<li>Step 2: Choose an Instance Type
 				<ul>
-					<li>Znajdź i zaznacz typ/moc instancji "m4.large" (szósta od góry)</li>
+					<li>Znajdź i zaznacz typ/moc instancji np. "t2.medium"</li>
 					<li>Kliknij szary przycisk "Next: Configure Instance Details"</li>
 				</ul>
 			</li>
@@ -29,21 +29,22 @@
 			</li>
 			<li>Step 4: Add Storage
 				<ul>
-					<li>Podaj rozmiar domyślnej partycji (min 30GB)</li>
+					<li>Zostaw wszystko domyślnie</li>
 					<li>Kliknij szary przycisk "Next: Tag Instance"</li>
 				</ul>
 			</li>
 			<li>Step 5: Tag Instance
 				<ul>
-					<li>W polu "value" podaj nazwę swojej maszyny (będzie potrzebna do indentyfikacji na liście)</li>
+					<li>Kliknij szary przycisk "Add tag"</li>
+					<li>W polu "name" wpisz 'name' (ten tag będzie użyty jako nazwa instancji)</li>
+					<li>W polu "value" podaj dowolną rozpoznawalną nazwę (będzie potrzebna do indentyfikacji na liście maszyn)</li>
 					<li>Kliknij szary przycisk "Next: Configure Security Group"</li>
 				</ul>
 			</li>
 			<li>Step 6: Configure Security Group
 				<ul>
 					<li>Wybierz "Select an existing security group"</li>
-					<li>Wybierz Security Group "default"</li>
-					<li>Sprawdź czy ma ona otwarty port 3389</li>
+					<li>Wybierz Security Group o nazwie (nie ID) "default"</li>
 					<li>Kliknij niebieski przycisk "Review and Launch"</li>
 				</ul>
 			</li>
@@ -60,7 +61,7 @@
 			<li>Wybierz "Create a new key pair"</li>
 			<li>Dowolnie nazwij klucz</li>
 			<li>Kliknij szary przycisk "Download key pair"</li>
-			<li>Zauważ, że został pobrany plik pem z kluczem</li>
+			<li>Zauważ, że został pobrany plik pem z kluczem (NIE ZGUB GO! Będzie za chwilę potrzebny)</li>
 		</ul>
 	</li>
 	<li>Kliknij niebieski przycisk "Launch Instances"</li>
