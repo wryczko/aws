@@ -107,6 +107,7 @@
 			<li>Kliknij w textbox "Instance", znajdź i wybierz swoją instancję</li>
 			<li>Zaznacz opcję "Allow Elastic IP to be reassociated if already attached"</li>
 			<li>Kliknij niebieski przycisk "Associate"</li>
+			<li>Jeżeli jesteś zalogowany(a) przez RDP, to prawdopodobnie Cię wyloguje, ponieważ zmienił się adres IP</li>
 		</ul>
 	</li>
 	<li>Sprawdź wydajność swojej maszyny wirtualnej
