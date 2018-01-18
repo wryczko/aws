@@ -377,6 +377,7 @@
 	<li>Przygotuj dwa EC2
 		<ul>
 			<li>Stwórz dwie EC2 wykorzystując obraz AMI „ObrazDoZadania6”</li>
+			<li>W kroku 3 "Configure Instance Details" możesz podać, ale instancji ma zostać utworzonych</li>
 			<li>Podczas tworzenia EC2 wybierz nowoutworzone Security Group (z punktu 1)</li>
 		</ul>
 	</li>
