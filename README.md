@@ -408,6 +408,14 @@
 					<li>Step 4: Configure Routing</li>
 					<ul>
 						<li>W polu "Name" podaj dowolną nazwę dla nowej floty maszyn wirtualnych</li>
+						<li>(opcjonalne) Przyspiesz rejestrację maszyn w Load Balancerze
+							<ol>
+								<li>Rozwiń "Advanced health check settings"</li>
+								<li>Ustaw "Healthy threshold" na 2</li>
+								<li>Ustaw "Timeout" na 2</li>
+								<li>Ustaw "Interval" na 5</li>
+							</ol>
+						</li>
 						<li>Kliknij w szary przycisk "Next: Register Targets" w prawym dolnym rogu</li>
 					</ul>
 					<li>Step 5: Register Targets</li>
@@ -429,7 +437,7 @@
 	<li>Przetestuj Load Balancer
 		<ul>
 			<li>Skorzystaj z usługi (otwórz w przeglądarce) korzystając z adresu Load Balancera (DNS name)</li>
-			<li>Odśwież kilka razy i zauważ zmieniające się adresy IP</li>
+			<li>Odśwież kilka razy i zauważ zmieniające się adresy IP, które są adresami maszyn EC2, do których strzela Load Balancer</li>
 		</ul>
 	</li>
 	<li>Przetestuj EC2
