@@ -112,7 +112,6 @@
 			<li>Wybierz opcję "Associate Address"</li>
 			<li>Wybierz "Instance" jako Resource Type (prawdopodobnie domyślnie wybrany)</li>
 			<li>Kliknij w textbox "Instance", znajdź i wybierz swoją instancję</li>
-			<li>Zaznacz opcję "Allow Elastic IP to be reassociated if already attached"</li>
 			<li>Kliknij niebieski przycisk "Associate"</li>
 			<li>Jeżeli jesteś zalogowany(a) przez RDP, to prawdopodobnie Cię wyloguje, ponieważ zmienił się adres IP</li>
 		</ul>
@@ -173,8 +172,8 @@
 			<li>Przejdź do listy EIP</li>
 			<li>Kliknij szary przycisk "Actions" (nad listą) lub kliknij prawym przyciskiem myszy na EIP</li>
 			<li>Wybierz opcję "Associate Address"</li>
-			<li>Kliknij w textbox "Instance", znajdź i wybierz swoją nową (mocniejszą) instancję</li>
-			<li>Zaznacz opcje "Reassociation"</li>
+			<li>Kliknij w textbox "Instance", znajdź i wybierz swoją nową (mocniejszą) instancję</li>			
+			<li>Zaznacz opcję "Allow Elastic IP to be reassociated if already attached"</li>
 			<li>Kliknij niebieski przycisk "Associate"</li>
 		</ul>
 	</li>
