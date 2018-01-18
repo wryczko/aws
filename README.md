@@ -87,7 +87,7 @@
 		</ul>
 	</li>
 </ol>
-<h2>ZADANIE 2 – SKALOWANIE W GÓRĘ</h2>
+<h2>ZADANIE 2 – SKALOWANIE WERTYKALNE (W GÓRĘ I W DÓŁ)</h2>
 <ol>
 	<li>Zaalokuj nowy adres publiczny (EIP)
 		<ul>
@@ -129,7 +129,7 @@
 			<li>Kliknij niebieski przycisk "Create Image"</li>
 			<li>Zamknij okno klikając niebieski przycisk "Close"</li>
 			<li>Przejdź do listy utworzonych obrazów klikając na panelu z lewej strony "AMIs" (zakładka "IMAGES")</li>
-			<li>Poczekaj aż obraz będzie gotowy (3-4 min)</li>
+			<li>Poczekaj aż obraz będzie gotowy (3-5 min)</li>
 		</ul>
 	</li>
 	<li>Utwórz maszynę wirtualną z obrazu AMI
@@ -189,6 +189,13 @@
 			<li>Potwierdź działanie klikając niebieski przycisk "Yes, terminate"</li>
 		</ul>
 	</li>
+</ol>
+<h2>Alternatywne ZADANIE 2 – SKALOWANIE WERTYKALNE (bez EIP i AMI)</h2>
+<ol>
+	<li>Zatrzymaj maszynę wirtualną</li>
+	<li>Zmień typ instancji (na mocniejszą lub słabszą)</li>	
+	<li>Uruchom ponownie maszynę wirtualną</li>
+	<li>Sprawdź wydajność swojej maszyny wirtualnej</li>
 </ol>
 <h2>ZADANIE 3 – ZAŁADUJ I UDOSTĘPNIJ PLIK</h2>
 <ol>
