@@ -177,7 +177,7 @@
 			<li>Kliknij niebieski przycisk "Associate"</li>
 		</ul>
 	</li>
-	<li>Zaobserwuj w command line, czy użytkownik odczuje "skalowanie"</li>
+	<li>Zaobserwuj w command line, czy użytkownik odczuje "skalowanie" (czy VM przestanie odpowiadać na pakiety ICMP)</li>
 	<li>Sprawdź wydajność swojej nowej (mocniejszej) maszyny wirtualnej
 		<ul>
 			<li>Zaloguj się do maszyny przez RDP (jeżeli nie tworzyłeś nowego klucza, to hasło jest takie samo jak na starej maszynie)</li>
