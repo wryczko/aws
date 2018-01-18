@@ -83,7 +83,7 @@
 				</ul>
 			</li>
 			<li>Użyj pobranego pliku RDP i hasła do zalogowania się na maszynę wirtualną</li>
-			<li>Używaj maszyny wirtualnej w dowolnym celu</li>
+			<li>Używaj maszyny wirtualnej w dowolnym celu :D</li>
 		</ul>
 	</li>
 </ol>
