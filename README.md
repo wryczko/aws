@@ -428,13 +428,13 @@
 	<li>Poczekaj chwilę, aż Load Balancer zarejestruje sobie instancje EC2 (1-3 min)</li>
 	<li>Przetestuj Load Balancer
 		<ul>
-			<li>Skorzystaj z usługi (otwórz w przeglądarce) korzystając z adresu Load Balancera</li>
+			<li>Skorzystaj z usługi (otwórz w przeglądarce) korzystając z adresu Load Balancera (DNS name)</li>
 			<li>Odśwież kilka razy i zauważ zmieniające się adresy IP</li>
 		</ul>
 	</li>
 	<li>Przetestuj EC2
 		<ul>
-			<li>Skorzystaj z usługi (otwórz w przeglądarce) korzystając z adresu EC2</li>
+			<li>Skorzystaj z usługi (otwórz w przeglądarce) korzystając z adresu EC2 (Public DNS/IPv4)</li>
 			<li>Zauważ, że Security Group blokuje połączenie</li>
 		</ul>
 	</li>
