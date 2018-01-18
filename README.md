@@ -4,7 +4,14 @@
 <h2>Zadanie 1 - Pierwsza usługa - maszyna wirtualna</h2>
 <ol>
 	<li>Zaloguj się do AWS Console (użyj linku powyżej)</li>
-	<li>Przełącz się na jeden z regionów europejskich (prawy górny róg)</li>
+	<li>Przełącz się na jeden z regionów europejskich (prawy górny róg)
+		<ul>
+			<li>Numery 1-4 wybierają Frankfurt</li>
+			<li>Numery 5-8 wybierają Frankfurt</li>			
+			<li>Numery 9-12 wybierają Frankfurt</li>
+			<li>Numery 13-16 wybierają Frankfurt</li>			
+		</ul>
+	</li>
 	<li>Z listy usług AWS ("Services" lewy górny róg) wybierz EC2 (sekcja "Compute")</li>
 	<li>Wybierz „Instances” lub "Running instances", a następnie „Launch Instance”</li>
 	<li>Dobierz konfigurację
@@ -134,8 +141,8 @@
 	</li>
 	<li>Utwórz maszynę wirtualną z obrazu AMI
 		<ul>
-			<li>Przejdź do listy instancji</li>
-			<li>Kliknij „Launch Instance”</li>
+			<li>Przejdź do listy instancji EC2</li>
+			<li>Kliknij „Launch instance”</li>
 			<li>Step 1: Choose an Amazon Machine Image (AMI)
 				<ul>
 					<li>Wybierz z lewego panelu "My AMIs"</li>
@@ -145,7 +152,7 @@
 			</li>
 			<li>Step 2: Choose an Instance Type
 				<ul>
-					<li>Wybierz mocniejszą maszynę (np. m4.4xlarge)</li>
+					<li>Wybierz mocniejszą lub słabszą maszynę (liczba procesorów)</li>
 				</ul>
 			</li>
 			<li>Reszta kroków jak w zadaniu 1</li>
