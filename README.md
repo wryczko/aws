@@ -234,7 +234,7 @@
 					</li>
 					<li>Set permissions
 						<ul>
-							<li>Zmień opcję "Manage public permissions" na "Grant public read access to this bucket"</li>
+							<li>Tutaj nic nie trzeba zmieniać</li>
 							<li>Kliknij niebieski przycisk "Next"</li>
 						</ul>
 					</li>
@@ -252,11 +252,33 @@
 		<ul>
 			<li>Otwórz bucket (kliknij w jego nazwę na liście)</li>
 			<li>Kliknij w niebieski przycisk "Upload" w lewym górnym rogu</li>
-			<li>Kilknij w przycisk "Add files" (zielona ikona z plusem)</li>
-			<li>Znajdź i wybierz pobrany plik test10MB.dat</li>
-			<li>Kliknij szary przycisk "Start Upload" w prawym dolnym rogu</li>
-			<li>Poczekaj aż plik zostanie załadowany do usługi S3</li>
-			<li>Kliknij prawym przyciskiem myszy na plik i wybierz opcję "Make Public"</li>
+			<ol>
+				<li>Select files
+					<ul>
+						<li>Kliknij "Add files"</li>
+						<li>Wybierz plik "10MB.dat"</li>
+						<li>Kliknij niebieski przycisk "Next"</li>
+					</ul>
+				</li>
+				<li>Set permissions
+					<ul>
+						<li>Zmień opcję "Manage public permissions" na "Grant public read access to this bucket"</li>
+						<li>Kliknij niebieski przycisk "Next"</li>
+					</ul>
+				</li>
+				<li>Set properties
+					<ul>
+						<li>Tutaj nic nie trzeba zmieniać</li>
+						<li>Kliknij niebieski przycisk "Next"</li>
+					</ul>
+				</li>
+				<li>Review
+					<ul>
+						<li>Sprawdź konfigurację</li>
+						<li>Kliknij niebieski przycisk "Upload"</li>
+					</ul>
+				</li>
+			</ol>
 		</ul>
 	</li>
 	<li>Przeprowadź test czasu odpowiedzi
