@@ -368,10 +368,10 @@
 </ol>
 <h2>ZADANIE 6 – SKALOWANIE HORYZONTALNE (WSZERZ)</h2>
 <ol>
-	<li>Przygotuj Security Groupy
+	<li>Przygotuj dwie Security Groupy
 		<ul>
-			<li>Stwórz Security Group dla Load Balancera z otwarym portem 80 dla wszystkich</li>
-			<li>Stwórz Security Group dla EC2 z otwartym portem 80 tylko dla Security Groupy Load Balancera z poprzedniego kroku</li>
+			<li>Stwórz Security Group z otwarym portem 80 dla wszystkich (przypiszemy ją za chwilę do Load Balancera)</li>
+			<li>Stwórz Security Group z otwartym portem 80 tylko dla Security Groupy z poprzedniego kroku (przypiszemy za chwilę tą grupę do EC2)</li>
 		</ul>
 	</li>
 	<li>Przygotuj dwa EC2
