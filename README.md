@@ -387,6 +387,7 @@
 			<li>Z panelu po lewej wybierz "Load balancers" (zakładka "Load balancing")</li>
 			<li>Kliknij w niebieski przycisk "Create Load Balancer" w lewym górnym rogu</li>
 				<ol>
+					<li>Select load balancer type: "Application Load Balancer"</li>
 					<li>Step 1: Define Load Balancer</li>
 					<ul>
 						<li>W polu "Load Balancer name" wpisz wymaganą nazwę</li>
