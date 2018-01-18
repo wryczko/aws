@@ -137,6 +137,7 @@
 			<li>Zamknij okno klikając niebieski przycisk "Close"</li>
 			<li>Przejdź do listy utworzonych obrazów klikając na panelu z lewej strony "AMIs" (zakładka "IMAGES")</li>
 			<li>Poczekaj aż obraz będzie gotowy (3-5 min)</li>
+			<li>Maszyna źródłowa zostanie na chwilę wyłączona, ale sama się uruchomi</li>
 		</ul>
 	</li>
 	<li>Utwórz maszynę wirtualną z obrazu AMI
