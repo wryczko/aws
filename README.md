@@ -9,7 +9,7 @@
 	<li>Wybierz „Instances” lub "Running instances", a następnie „Launch Instance”</li>
 	<li>Dobierz konfigurację
 		<ul>
-			<li>Step 1: Choose an Amazon Machine Image (AMI)
+			<li>Step 1: Choose an Amazon Machine Image (AMI) - będą one bardziej szczegółowo omówione w innym zadaniu
 				<ul>
 					<li>Znajdź "Windows Server 2012 R2 Base"</li>
 					<li>Kliknij niebieski przycisk "Select"</li>
@@ -41,7 +41,7 @@
 					<li>Kliknij szary przycisk "Next: Configure Security Group"</li>
 				</ul>
 			</li>
-			<li>Step 6: Configure Security Group
+			<li>Step 6: Configure Security Group - będą one bardziej szczegółowo omówione w innym zadaniu
 				<ul>
 					<li>Wybierz "Select an existing security group"</li>
 					<li>Wybierz Security Group o nazwie (nie ID) "default"</li>
