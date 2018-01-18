@@ -36,7 +36,7 @@
 			<li>Step 5: Tag Instance
 				<ul>
 					<li>Kliknij szary przycisk "Add tag"</li>
-					<li>W polu "name" wpisz 'name' (ten tag będzie użyty jako nazwa instancji)</li>
+					<li>W polu "name" wpisz 'Name' (ten tag będzie użyty jako nazwa instancji)</li>
 					<li>W polu "value" podaj dowolną rozpoznawalną nazwę (będzie potrzebna do indentyfikacji na liście maszyn)</li>
 					<li>Kliknij szary przycisk "Next: Configure Security Group"</li>
 				</ul>
@@ -94,7 +94,7 @@
 			<li>Z listy usług AWS wybierz EC2 (prawdopodobnie już tu jesteś)</li>
 			<li>Z panelu po lewej stronie wybierz "Elastic IPs" (zakładka "NETWORK & SECURITY")</li>
 			<li>Kliknij niebieski przycisk "Allocate New Address"</li>
-			<li>Potwierdź zamiar klikając niebieski przycisk "Yes, Allocate"</li>
+			<li>Potwierdź zamiar klikając niebieski przycisk "Allocate"</li>
 			<li>Zamknij okno klikając niebieski przycisk "Close"</li>
 		</ul>
 	</li>
@@ -103,16 +103,18 @@
 			<li>Zaznacz nowoutworzony EIP</li>
 			<li>Kliknij szary przycisk "Actions" (nad listą) lub kliknij prawym przyciskiem myszy na EIP</li>
 			<li>Wybierz opcję "Associate Address"</li>
+			<li>Wybierz "Instance" jako Resource Type (prawdopodobnie domyślnie wybrany)</li>
 			<li>Kliknij w textbox "Instance", znajdź i wybierz swoją instancję</li>
+			<li>Zaznacz opcję "Allow Elastic IP to be reassociated if already attached"</li>
 			<li>Kliknij niebieski przycisk "Associate"</li>
 		</ul>
 	</li>
 	<li>Sprawdź wydajność swojej maszyny wirtualnej
 		<ul>
 			<li>Pobierz plik "benchmark.exe" z "\\morpheus\pub-Transfer\w\wryczko\FP_AWS_Training\benchmark.exe"
-			<li>Zaloguj się do maszyny wirtualnej (opis w zadaniu 1)</li>
-			<li>Skopiuj i odpal plik benchmark.exe z liczbą iteracji (domyślnie 10)</li>
-			<li>Na maszynie m4.large test trwa niecałą minutę</li>
+			<li>Zaloguj się do maszyny wirtualnej (opis w zadaniu 1) - zauważ, że zmienił się publiczny adres IP</li>
+			<li>Skopiuj i odpal plik benchmark.exe z liczbą iteracji (domyślnie 10) np. ./benchmark.exe 20 lub poprzez dwuklik</li>
+			<li>Na maszynie t2.large test trwa około 40 sekund dla 10 iteracji</li>
 			<li>Zapisz czas wykonania programu</li>
 		</ul>
 	</li>
