@@ -323,7 +323,7 @@
 	</li>
 	<li>Przeprowadź test prędkości pobierania
 		<ul>
-			<li>Doklei do adresu hosta CloudFronta nazwę pliku (bez nazwy bucketa S3)</li>
+			<li>Doklei do adresu hosta dystrybucji CloudFront nazwę pliku (bez nazwy bucketa S3)</li>
 			<li>Pobierz kilka razy plik za pomocą downloadera (np. downloader.exe http://d30wp07u6aouly.cloudfront.net/50MB.dat)</li>
 			<li>Zapisz średni czas pobierania</li>
 		</ul>
