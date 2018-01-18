@@ -217,7 +217,7 @@
 		<ul>
 			<li>Z listy usług AWS wybierz S3 (kategoria "Storage & Content Delivery")</li>
 			<li>Kliknij w niebieski przycisk "Create Bucket" w lewym górnym rogu</li>
-			<li>Skonfiguruj basket
+			<li>Skonfiguruj bucket
 				<ol>
 					<li>Name and region
 						<ul>
@@ -241,7 +241,7 @@
 					<li>Review
 						<ul>
 							<li>Sprawdź konfigurację</li>
-							<li>Kliknij niebieski przycisk "bucket"</li>
+							<li>Kliknij niebieski przycisk "Create bucket"</li>
 						</ul>
 					</li>
 				</ol>
