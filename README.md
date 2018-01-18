@@ -1,7 +1,7 @@
 <h1>Zadania do szkolenia</h1>
 <a href="https://console.aws.amazon.com">Link do AWS jako root account</a><br>
 <a href="https://666786091374.signin.aws.amazon.com/console">Link do "subdomeny" AWS (dla użytkowników stworzonych przez roota)</a>
-<h2>Zadanie 1 - Pierwsza usługa - maszyna wirtualna</h2>
+<h2>Zadanie 1 - PIERWSZA USŁUGA - maszyna wirtualna</h2>
 <ol>
 	<li>Zaloguj się do AWS Console (użyj linku powyżej)</li>
 	<li>Przełącz się na jeden z regionów europejskich (prawy górny róg)
@@ -300,7 +300,7 @@
 		</ul>
 	</li>
 </ol>
-<h2>ZADANIE 4 – ROZPROSZ PLIK PO CAŁYM ŚWIECIE</h2>
+<h2>ZADANIE 4 – ROZPROSZYĆ PLIK PO CAŁYM ŚWIECIE</h2>
 <ol>
 	<li>Przygotuj usługę CloudFront
 		<ul>
