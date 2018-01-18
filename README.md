@@ -91,7 +91,7 @@
 <ol>
 	<li>Zaalokuj nowy adres publiczny (EIP)
 		<ul>
-			<li>Z listy usług AWS wybierz EC2 (lewy górny róg)</li>
+			<li>Z listy usług AWS wybierz EC2 (prawdopodobnie już tu jesteś)</li>
 			<li>Z panelu po lewej stronie wybierz "Elastic IPs" (zakładka "NETWORK & SECURITY")</li>
 			<li>Kliknij niebieski przycisk "Allocate New Address"</li>
 			<li>Potwierdź zamiar klikając niebieski przycisk "Yes, Allocate"</li>
