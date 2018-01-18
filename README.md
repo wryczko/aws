@@ -217,9 +217,35 @@
 		<ul>
 			<li>Z listy usług AWS wybierz S3 (kategoria "Storage & Content Delivery")</li>
 			<li>Kliknij w niebieski przycisk "Create Bucket" w lewym górnym rogu</li>
-			<li>W polu "Bucket Name" podaj unikalną (na skalę AWS) nazwę bucketa</li>
-			<li>Wybierz jakiś odległy region (np. Sydney, Tokyo)</li>
-			<li>Kliknij w niebieski przycisk "Create"</li>
+			<li>Skonfiguruj basket
+				<ol>
+					<li>Name and region
+						<ul>
+							<li>W polu "Bucket Name" podaj unikalną (na skalę AWS) nazwę bucketa</li>
+							<li>Wybierz jakiś odległy region w Asia Pacific (Sydney lub Seul)</li>
+							<li>Kliknij niebieski przycisk "Next"</li>
+						</ul>
+					</li>					
+					<li>Set properties
+						<ul>
+							<li>Tutaj nic nie trzeba włączać</li>
+							<li>Kliknij nibieski przycisk "Next"</li>
+						</ul>
+					</li>
+					<li>Set permissions
+						<ul>
+							<li>Zmień opcję "Manage public permissions" na "Grant public read access to this bucket"</li>
+							<li>Kliknij niebieski przycisk "Next"</li>
+						</ul>
+					</li>
+					<li>Review
+						<ul>
+							<li>Sprawdź konfigurację</li>
+							<li>Kliknij niebieski przycisk "bucket"</li>
+						</ul>
+					</li>
+				</ol>
+			</li>			
 		</ul>
 	</li>
 	<li>Wgraj plik testowy do usługi S3 i udostępnij
