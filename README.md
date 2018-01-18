@@ -324,7 +324,7 @@
 	<li>Przeprowadź test prędkości pobierania
 		<ul>
 			<li>Doklei do adresu hosta CloudFronta nazwę pliku (bez nazwy bucketa S3)</li>
-			<li>Pobierz kilka razy plik za pomocą downloadera (np. downloader.exe http://d30wp07u6aouly.cloudfront.net/FPTrainingAWS.zip)</li>
+			<li>Pobierz kilka razy plik za pomocą downloadera (np. downloader.exe http://d30wp07u6aouly.cloudfront.net/50MB.dat)</li>
 			<li>Zapisz średni czas pobierania</li>
 		</ul>
 	</li>
@@ -336,8 +336,9 @@
 			<li>Przejdź do usługi EC2</li>
 			<li>Z panelu po lewej stronie wybierz "Security Groups" (zakładka "NETWORK & SECURITY")</li>
 			<li>Kliknij niebieski przycisk "Create Security Group"</li>
-			<li>Nadaj nazwę oraz opis</li>
+			<li>Nadaj nazwę oraz opis (niestety również wymagany)</li>
 			<li>Kliknij niebieski przycisk "Create"</li>
+			<li>Puste Security Group nie przyjmuje żadnych połączeń</li>
 		</ul>
 	</li>
 	<li>Zacznij wysyłać pakiety ICMP do EC2 (ping -t)</li>
@@ -359,7 +360,7 @@
 			<li>Kliknij szary przycisk "Actions" lub kliknij prawym przyciskiem myszyny na Security Group</li>
 			<li>Wybierz opcję "Edit inbound rules" lub kliknij "Edit" w zakładce "Inbound" w panelu na dole</li>
 			<li>Wybierz Type "All ICMP"</li>
-			<li>Wybierz Source "My IP"</li>
+			<li>Wybierz Source "My IP" (zostanie wykorzystany IP sieci FP)</li>
 			<li>Kliknij niebieski przycisk "Save"</li>
 		</ul>
 	</li>
