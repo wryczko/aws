@@ -118,7 +118,7 @@
 	</li>
 	<li>Sprawdź wydajność swojej maszyny wirtualnej
 		<ul>
-			<li>Pobierz plik "benchmark.exe" z "\\morpheus\pub-Transfer\w\wryczko\FP_AWS_Training\benchmark.exe"
+			<li>Pobierz plik "benchmark.exe" z "\\morpheus\pub\Dropbox\benchmark.exe"
 			<li>Zaloguj się do maszyny wirtualnej (opis w zadaniu 1) - zauważ, że zmienił się publiczny adres IP</li>
 			<li>Skopiuj i odpal plik benchmark.exe z liczbą iteracji (domyślnie 10) np. ./benchmark.exe 20 lub poprzez dwuklik</li>
 			<li>Na maszynie t2.large test trwa około 40 sekund dla 10 iteracji</li>
@@ -208,7 +208,7 @@
 <ol>
 	<li>Pobierz pliki testowe
 		<ul>
-			<li>Wejdź na \\morpheus\pub-Transfer\w\wryczko\FP_AWS_Training</li>
+			<li>Wejdź na \\morpheus\pub\Dropbox</li>
 			<li>Skopiuj na lokalny komputer plik "50MB.dat"</li>
 			<li>Skopiuj na lokalny komputer plik "downloader.exe"</li>
 		</ul>
