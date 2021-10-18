@@ -110,10 +110,11 @@
 		<ul>
 			<li>Zaznacz nowoutworzony EIP</li>
 			<li>Kliknij szary przycisk "Actions" (nad listą) lub kliknij prawym przyciskiem myszy na EIP</li>
-			<li>Wybierz opcję "Associate Address"</li>
+			<li>Wybierz opcję "Associate Elastip IP address"</li>
 			<li>Wybierz "Instance" jako Resource Type (prawdopodobnie domyślnie wybrany)</li>
 			<li>Kliknij w textbox "Instance", znajdź i wybierz swoją instancję</li>
 			<li>Kliknij niebieski przycisk "Associate"</li>
+			<li>Zaznacz checkbox "Allow this Elastic IP address to be reassociated"</li>
 			<li>Jeżeli jesteś zalogowany(a) przez RDP, to prawdopodobnie Cię wyloguje, ponieważ zmienił się adres IP</li>
 		</ul>
 	</li>
