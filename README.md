@@ -9,7 +9,7 @@
 			<li>FPTrainingUser[1-4] wybierają Frankfurt</li>
 			<li>FPTrainingUser[5-8] wybierają Ireland</li>			
 			<li>FPTrainingUser[9-12] wybierają London</li>
-			<li>FPTrainingUser[13-15] wybierają Paris</li>			
+			<li>FPTrainingUser[13-16] wybierają Paris</li>			
 		</ul>
 	</li>
 	<li>Z listy usług AWS ("Services" lewy górny róg) wybierz EC2 (sekcja "Compute")</li>
