@@ -4,6 +4,14 @@
 <h2>Zadanie 1 - PIERWSZA USŁUGA (maszyna wirtualna)</h2>
 <ol>
 	<li>Zaloguj się do AWS Console (użyj linku powyżej)</li>
+	<li>Przełącz się na jeden z regionów europejskich (prawy górny róg)
+		<ul>
+			<li>FPTrainingUser[1-4] wybierają Frankfurt</li>
+			<li>FPTrainingUser[5-8] wybierają Ireland</li>			
+			<li>FPTrainingUser[9-12] wybierają London</li>
+			<li>FPTrainingUser[13-15] wybierają Paris</li>			
+		</ul>
+	</li>
 	<li>Z listy usług AWS ("Services" lewy górny róg) wybierz EC2 (sekcja "Compute")</li>
 	<li>Wybierz „Instances” lub "Running instances", a następnie „Launch Instance”</li>
 	<li>Dobierz konfigurację
