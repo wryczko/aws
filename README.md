@@ -131,7 +131,7 @@
 			<li>Przejdź do listy instancji</li>
 			<li>Zaznacz swoją instancję</li>
 			<li>Kliknij szary przycisk "Actions" (nad listą) lub kliknij prawym przyciskiem myszy na instancję</li>
-			<li>Wybierz opcję "Image"->"Create Image"</li>
+			<li>Wybierz opcję "Image and templates"->"Create Image"</li>
 			<li>W polu "Instance name" wpisz dowolną nazwę obrazu</li>
 			<li>Kliknij niebieski przycisk "Create Image"</li>
 			<li>Zamknij okno klikając niebieski przycisk "Close"</li>
