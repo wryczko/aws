@@ -134,8 +134,7 @@
 			<li>Wybierz opcję "Image and templates"->"Create Image"</li>
 			<li>W polu "Instance name" wpisz dowolną nazwę obrazu</li>
 			<li>Kliknij niebieski przycisk "Create Image"</li>
-			<li>Zamknij okno klikając niebieski przycisk "Close"</li>
-			<li>Przejdź do listy utworzonych obrazów klikając na panelu z lewej strony "AMIs" (zakładka "IMAGES")</li>
+			<li>Przejdź do listy utworzonych obrazów klikając na panelu z lewej strony "AMIs" (zakładka "Images")</li>
 			<li>Poczekaj aż obraz będzie gotowy (3-5 min)</li>
 			<li>Maszyna źródłowa zostanie na chwilę wyłączona, ale sama się uruchomi</li>
 		</ul>
