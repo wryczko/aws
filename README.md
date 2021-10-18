@@ -4,21 +4,13 @@
 <h2>Zadanie 1 - PIERWSZA USŁUGA (maszyna wirtualna)</h2>
 <ol>
 	<li>Zaloguj się do AWS Console (użyj linku powyżej)</li>
-	<li>Przełącz się na jeden z regionów europejskich (prawy górny róg)
-		<ul>
-			<li>FPTrainingUser[1-4] wybierają Frankfurt</li>
-			<li>FPTrainingUser[5-8] wybierają Ireland</li>			
-			<li>FPTrainingUser[9-12] wybierają London</li>
-			<li>FPTrainingUser[13-15] wybierają Paris</li>			
-		</ul>
-	</li>
 	<li>Z listy usług AWS ("Services" lewy górny róg) wybierz EC2 (sekcja "Compute")</li>
 	<li>Wybierz „Instances” lub "Running instances", a następnie „Launch Instance”</li>
 	<li>Dobierz konfigurację
 		<ul>
 			<li>Step 1: Choose an Amazon Machine Image (AMI) - będą one bardziej szczegółowo omówione w innym zadaniu
 				<ul>
-					<li>Znajdź "Windows Server 2012 R2 Base"</li>
+					<li>Znajdź "Windows Server 2019 Base"</li>
 					<li>Kliknij niebieski przycisk "Select"</li>
 				</ul>
 			</li>
@@ -51,7 +43,7 @@
 			<li>Step 6: Configure Security Group - będą one bardziej szczegółowo omówione w innym zadaniu
 				<ul>
 					<li>Wybierz "Select an existing security group"</li>
-					<li>Wybierz Security Group o nazwie (nie ID) "default"</li>
+					<li>Wybierz Security Group o nazwie "default"</li>
 					<li>Kliknij niebieski przycisk "Review and Launch"</li>
 				</ul>
 			</li>
@@ -77,11 +69,12 @@
 		<ul>
 			<li>Znajdź i zaznacz swoją maszynę wirtualną</li>
 			<li>Kliknij szary przycisk „Connect” (nad listą instancji)</li>
+			<li>Wybierz zakładkę RDP Client "Get Password"</li>
 			<li>Pobierz plik RDP klikając w szary przycisk "Download Remote Desktop File"</li>
 			<li>Pobierz hasło
-				<ul>
+				<ul>					
 					<li>Kliknij w szary przycisk "Get Password"</li>
-					<li>Poczekaj aż odblokuje się możliwość pobrania hasła (2-3 min)</li>
+					<li>Poczekaj aż odblokuje się możliwość pobrania hasła (3-5 min)</li>
 					<li>Kliknij w przycisk "Choose file"</li>
 					<li>Znajdź i wybierz uprzednio pobrany plik/klucz</li>
 					<li>Kliknij w szary przycisk "Decrypt Password"</li>
