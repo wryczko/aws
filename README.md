@@ -101,9 +101,10 @@
 		<ul>
 			<li>Z listy usług AWS wybierz EC2 (prawdopodobnie już tu jesteś)</li>
 			<li>Z panelu po lewej stronie wybierz "Elastic IPs" (zakładka "NETWORK & SECURITY")</li>
-			<li>Kliknij niebieski przycisk "Allocate New Address"</li>
-			<li>Potwierdź zamiar klikając niebieski przycisk "Allocate"</li>
-			<li>Zamknij okno klikając niebieski przycisk "Close"</li>
+			<li>Kliknij pomarańczowy przycisk "Allocate Elastic IP address"</li>
+			<li>Dodaj Tag o nazwie "Name" klikając w szary przycisk "Add new tag"</li>
+			<li>Potwierdź zamiar klikając pomarańczowy przycisk "Allocate"</li>
+			<li>Zamknij okno klikając pomarańczowy przycisk "Close"</li>
 		</ul>
 	</li>
 	<li>Podepnij EIP do istniejącej instancji
@@ -111,10 +112,9 @@
 			<li>Zaznacz nowoutworzony EIP</li>
 			<li>Kliknij szary przycisk "Actions" (nad listą) lub kliknij prawym przyciskiem myszy na EIP</li>
 			<li>Wybierz opcję "Associate Elastip IP address"</li>
-			<li>Wybierz "Instance" jako Resource Type (prawdopodobnie domyślnie wybrany)</li>
 			<li>Kliknij w textbox "Instance", znajdź i wybierz swoją instancję</li>
-			<li>Kliknij niebieski przycisk "Associate"</li>
-			<li>Zaznacz checkbox "Allow this Elastic IP address to be reassociated"</li>
+			<li>Zaznacz na samym dole checkbox "Allow this Elastic IP address to be reassociated"</li>
+			<li>Kliknij pomarańczowy przycisk "Associate"</li>
 			<li>Jeżeli jesteś zalogowany(a) przez RDP, to prawdopodobnie Cię wyloguje, ponieważ zmienił się adres IP</li>
 		</ul>
 	</li>
@@ -143,12 +143,12 @@
 	<li>Utwórz maszynę wirtualną z obrazu AMI
 		<ul>
 			<li>Przejdź do listy instancji EC2</li>
-			<li>Kliknij „Launch instance”</li>
+			<li>Kliknij „Launch instances”</li>
 			<li>Step 1: Choose an Amazon Machine Image (AMI)
 				<ul>
 					<li>Wybierz z lewego panelu "My AMIs"</li>
 					<li>Znajdź swój nowoutworzony obraz</li>
-					<li>Kliknij niebieski przycisk "Select"</li>
+					<li>Kliknij pomarańczowy przycisk "Select"</li>
 				</ul>
 			</li>
 			<li>Step 2: Choose an Instance Type
