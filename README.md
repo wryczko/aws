@@ -271,7 +271,7 @@
 	<li>Przeprowadź test prędkości pobierania
 		<ul>
 			<li>Przygotuj link do pliku (NIE samej domeny)</li>
-			<li>Pobierz kilka razy plik za pomocą dowolnego managera pobierań (np. <a href="https://downloads.sourceforge.net/project/urlget/uget%20%28stable%29/2.2.1/uget-2.2.1-win32%2Bgtk3.7z?ts=gAAAAABheZ-bnf04XfuY7PTQnJz7z7iR7fkCf6YsFW9Dr-cqbLcH-yr3XGr07cncvqOPtdjMlUwOXiX52CM-bwwcHm-vuGqLUA%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Furlget%2Ffiles%2Fuget%2520%2528stable%2529%2F2.2.1%2Fuget-2.2.1-win32%252Bgtk3.7z%2Fdownload%3Fuse_mirror%3Ddeac-riga">uget</a>)</li>
+			<li>Pobierz kilka razy plik za pomocą dowolnego managera pobierań (np. <a href="https://sourceforge.net/projects/urlget/files/latest/download">uget</a>)</li>
 			<li>Zapisz najniższy czas pobierania</li>
 		</ul>
 	</li>
@@ -280,15 +280,14 @@
 <ol>
 	<li>Przygotuj usługę CloudFront
 		<ul>
-			<li>Wybierz usługę CloudFront (kategoria "Storage & Content Delivery")</li>
-			<li>Kliknij w niebieski przycisk „Create Distribution” w lewym górnym rogu</li>
-			<li>Kliknij w niebieski przycisk "Get Started" pod wersją „Web”</li>
-			<li>W polu "Origin Domain Name" wybierz bucket S3 (utworzony w poprzednim zadaniu)</li>
+			<li>Wybierz usługę CloudFront (kategoria "Networking & Content Delivery")</li>
+			<li>Kliknij w pomarańczowy przycisk „Create Distribution”</li>
+			<li>W polu "Origin domain" wybierz bucket S3 (utworzony w poprzednim zadaniu)</li>
 			<li>Resztę konfiguracji zostaw domyślną</li>
-			<li>Kliknij w niebieski przycisk „Create Distribution” w prawym dolnym rogu</li>	
+			<li>Kliknij w pomarańczowy przycisk „Create Distribution” w prawym dolnym rogu</li>	
 		</ul>
 	</li>
-	<li>Odczekaj minimum 15 minut (przerwa na kawę)</li>
+	<li>(Deploying) Odczekaj minimum 15 minut (przerwa na kawę)</li>
 	<li>Przeprowadź test czasu odpowiedzi
 		<ul>
 			<li>Znajdź i skopiuj adres hosta CloudFront ("Domain Name")</li>
@@ -300,7 +299,7 @@
 	<li>Przeprowadź test prędkości pobierania
 		<ul>
 			<li>Doklei do adresu hosta dystrybucji CloudFront nazwę pliku (bez nazwy bucketa S3)</li>
-			<li>Pobierz kilka razy plik za pomocą downloadera (np. downloader.exe http://d30wp07u6aouly.cloudfront.net/50MB.dat)</li>
+			<li>Pobierz kilka razy plik za pomocą managera pobierań</li>
 			<li>Zapisz średni czas pobierania</li>
 		</ul>
 	</li>
