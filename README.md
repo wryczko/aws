@@ -241,7 +241,7 @@
 				<li>Select files
 					<ul>
 						<li>Kliknij "Add files"</li>
-						<li>Wybierz plik "50MB.dat"</li>
+						<li>Wybierz plik "testfile"</li>
 						<li>Rozwiń zakładkę "Permissions"</li>
 						<li>Zaznacz w opcjach "Predefined ACLs" radiobutton "Grant public-read access"</li>
 						<li>Zaznacz zgodę "I understand the risk of granting public-read access to the specified objects."</li>
