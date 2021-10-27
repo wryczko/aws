@@ -207,43 +207,28 @@
 </ol>
 <h2>ZADANIE 3 – ZAŁADUJ I UDOSTĘPNIJ PLIK</h2>
 <ol>
-	<li>Przygotuj pliki testowe
+	<li>Przygotuj pliki testowe na lokalnym komputerze
 		<ul>			
-			<li>Wygeneruj plik testowy korzystając z <i>fsutil file createnew testfile 5000000</i></li>
+			<li>Otwórz dowolną linię poleceń np. cmd/git bash/powershell z uprawnieniami administratora</li>
+			<li>Wygeneruj plik testowy korzystając z <i>fsutil file createnew testfile 10000000</i></li>
 			<li>Skopiuj na lokalny komputer plik "downloader.exe"</li>
 		</ul>
 	</li>
 	<li>Przygotuj usługę S3
 		<ul>
-			<li>Z listy usług AWS wybierz S3 (kategoria "Storage & Content Delivery")</li>
-			<li>Kliknij w niebieski przycisk "Create Bucket" w lewym górnym rogu</li>
+			<li>Z listy usług AWS wybierz S3 (kategoria "Storage")</li>
+			<li>Kliknij w pomarańczowy przycisk "Create Bucket" w lewym górnym rogu</li>
 			<li>Skonfiguruj bucket
 				<ol>
 					<li>Name and region
 						<ul>
 							<li>W polu "Bucket Name" podaj unikalną (na skalę AWS) nazwę bucketa</li>
 							<li>Wybierz jakiś odległy region w Asia Pacific (Sydney lub Seul)</li>
-							<li>Kliknij niebieski przycisk "Next"</li>
+							<li>Odznacz checkbox "Block all public access"</li>
+							<li>Zaznacz zgodę "I acknowledge that the current settings might result in this bucket and the objects within becoming public."<li>
+							<li>Kliknij pomarańczowy przycisk "Create bucket"</li>
 						</ul>
 					</li>					
-					<li>Set properties
-						<ul>
-							<li>Tutaj nic nie trzeba włączać</li>
-							<li>Kliknij nibieski przycisk "Next"</li>
-						</ul>
-					</li>
-					<li>Set permissions
-						<ul>
-							<li>Tutaj nic nie trzeba zmieniać</li>
-							<li>Kliknij niebieski przycisk "Next"</li>
-						</ul>
-					</li>
-					<li>Review
-						<ul>
-							<li>Sprawdź konfigurację</li>
-							<li>Kliknij niebieski przycisk "Create bucket"</li>
-						</ul>
-					</li>
 				</ol>
 			</li>			
 		</ul>
@@ -251,31 +236,21 @@
 	<li>Wgraj plik testowy do usługi S3 i udostępnij
 		<ul>
 			<li>Otwórz bucket (kliknij w jego nazwę na liście)</li>
-			<li>Kliknij w niebieski przycisk "Upload" w lewym górnym rogu</li>
+			<li>Kliknij w pomarańczowy przycisk "Upload" w prawym górnym rogu</li>
 			<ol>
 				<li>Select files
 					<ul>
 						<li>Kliknij "Add files"</li>
 						<li>Wybierz plik "50MB.dat"</li>
-						<li>Kliknij niebieski przycisk "Next"</li>
+						<li>Rozwiń zakładkę "Permissions"</li>
+						<li>Zaznacz w opcjach "Predefined ACLs" radiobutton "Grant public-read access"</li>
+						<li>Zaznacz zgodę "I understand the risk of granting public-read access to the specified objects."</li>
 					</ul>
 				</li>
-				<li>Set permissions
+				<li>Upload: status
 					<ul>
-						<li>Zmień opcję "Manage public permissions" na "Grant public read access to this bucket"</li>
-						<li>Kliknij niebieski przycisk "Next"</li>
-					</ul>
-				</li>
-				<li>Set properties
-					<ul>
-						<li>Tutaj nic nie trzeba zmieniać</li>
-						<li>Kliknij niebieski przycisk "Next"</li>
-					</ul>
-				</li>
-				<li>Review
-					<ul>
-						<li>Sprawdź konfigurację</li>
-						<li>Kliknij niebieski przycisk "Upload"</li>
+						<li>Poczekaj aż plik zostanie załadowany</li>
+						<li>Kliknij pomarańczowy przycisk "Close" w prawym górnym rogu</li>
 					</ul>
 				</li>
 			</ol>
