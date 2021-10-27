@@ -225,7 +225,7 @@
 							<li>W polu "Bucket Name" podaj unikalną (na skalę AWS) nazwę bucketa</li>
 							<li>Wybierz jakiś odległy region w Asia Pacific (Sydney lub Seul)</li>
 							<li>Odznacz checkbox "Block all public access"</li>
-							<li>Zaznacz zgodę "I acknowledge that the current settings might result in this bucket and the objects within becoming public."<li>
+							<li>Zaznacz zgodę "I acknowledge that the current settings might result in this bucket and the objects within becoming public."</li>
 							<li>Kliknij pomarańczowy przycisk "Create bucket"</li>
 						</ul>
 					</li>					
@@ -245,6 +245,7 @@
 						<li>Rozwiń zakładkę "Permissions"</li>
 						<li>Zaznacz w opcjach "Predefined ACLs" radiobutton "Grant public-read access"</li>
 						<li>Zaznacz zgodę "I understand the risk of granting public-read access to the specified objects."</li>
+						<li>Kliknij pomarańczowy przycisk "Upload" w prawym dolnym rogu</li>
 					</ul>
 				</li>
 				<li>Upload: status
@@ -260,7 +261,7 @@
 		<ul>			
 			<li>Kliknij lewym przyciskiem myszy w plik w bucket'cie</li>
 			<li>Kliknij na plik</li>
-			<li>Skopiuj link do pliku (jest na samym dole)</li>
+			<li>Skopiuj link do pliku ("Object URL")</li>
 			<li>Wydziel z linku domenę (np. s3.ap-northeast-2.amazonaws.com)</li>
 			<li>Otwórz na komputerze lokalnym command line (CMD)</li>
 			<li>Odpytaj host bucketa narzędziem ping (np. ping s3-website-eu-west-1.amazonaws.com)</li>
@@ -270,7 +271,7 @@
 	<li>Przeprowadź test prędkości pobierania
 		<ul>
 			<li>Przygotuj link do pliku (NIE samej domeny)</li>
-			<li>Pobierz kilka razy plik za pomocą downloadera (np. downloader.exe https://s3-eu-west-1.amazonaws.com/fptrainingaws/50MB.dat)</li>
+			<li>Pobierz kilka razy plik za pomocą dowolnego managera pobierań (np. <a href="https://downloads.sourceforge.net/project/urlget/uget%20%28stable%29/2.2.1/uget-2.2.1-win32%2Bgtk3.7z?ts=gAAAAABheZ-bnf04XfuY7PTQnJz7z7iR7fkCf6YsFW9Dr-cqbLcH-yr3XGr07cncvqOPtdjMlUwOXiX52CM-bwwcHm-vuGqLUA%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Furlget%2Ffiles%2Fuget%2520%2528stable%2529%2F2.2.1%2Fuget-2.2.1-win32%252Bgtk3.7z%2Fdownload%3Fuse_mirror%3Ddeac-riga">uget</a>)</li>
 			<li>Zapisz najniższy czas pobierania</li>
 		</ul>
 	</li>
