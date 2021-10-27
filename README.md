@@ -182,8 +182,8 @@
 	<li>Sprawdź wydajność swojej nowej (mocniejszej) maszyny wirtualnej
 		<ul>
 			<li>Zaloguj się do maszyny przez RDP (hasło jest takie samo jak do oryginalnej maszyny)</li>
-			<li>Zauważ, że plik "benchmark.exe" już się tam znajduje</li>
-			<li>Odpal plik benchmark.exe z liczbą iteracji jak na pierwszej maszynie (domyślnie 10)</li>
+			<li>Zauważ, że plik "cpuz_x64.ex" już się tam znajduje</li>
+			<li>Uruchom test wydajności (zakładka "Bench", przycisk "Bench CPU")</li>
 			<li>Zapisz czas wykonania programu</li>
 		</ul>
 	</li>
@@ -198,7 +198,7 @@
 		</ul>
 	</li>
 </ol>
-<h2>Alternatywne ZADANIE 2 – SKALOWANIE WERTYKALNE (bez EIP i AMI)</h2>
+<h2>(opcjonalnie) ZADANIE 2 – SKALOWANIE WERTYKALNE (bez EIP i AMI)</h2>
 <ol>
 	<li>Zatrzymaj maszynę wirtualną</li>
 	<li>Zmień typ instancji (na mocniejszą lub słabszą)</li>	
@@ -207,10 +207,9 @@
 </ol>
 <h2>ZADANIE 3 – ZAŁADUJ I UDOSTĘPNIJ PLIK</h2>
 <ol>
-	<li>Pobierz pliki testowe
-		<ul>
-			<li>Wejdź na \\morpheus\pub\Dropbox</li>
-			<li>Skopiuj na lokalny komputer plik "50MB.dat"</li>
+	<li>Przygotuj pliki testowe
+		<ul>			
+			<li>Wygeneruj plik testowy korzystając z <i>fsutil file createnew testfile 5000000</i></li>
 			<li>Skopiuj na lokalny komputer plik "downloader.exe"</li>
 		</ul>
 	</li>
