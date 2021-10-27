@@ -283,7 +283,7 @@
 			<li>Wybierz usługę CloudFront (kategoria "Networking & Content Delivery")</li>
 			<li>Kliknij w pomarańczowy przycisk „Create Distribution”</li>
 			<li>W polu "Origin domain" wybierz bucket S3 (utworzony w poprzednim zadaniu)</li>
-			<li>Resztę konfiguracji zostaw domyślną</li>
+			<li>W zakładce "Settings" ustaw "Price class" jako "Use only North America and Europe"</li>
 			<li>Kliknij w pomarańczowy przycisk „Create Distribution” w prawym dolnym rogu</li>	
 		</ul>
 	</li>
