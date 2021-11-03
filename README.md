@@ -211,7 +211,8 @@
 		<ul>			
 			<li>Otwórz dowolną linię poleceń np. cmd/git bash/powershell z uprawnieniami administratora</li>
 			<li>Wygeneruj plik testowy korzystając z <i>fsutil file createnew testfile 10000000</i></li>
-			<li>Skopiuj na lokalny komputer plik "downloader.exe"</li>
+			<li>Pobierz (jeżeli nie masz) dowolny manager pobierań (np. <a href="https://sourceforge.net/projects/urlget/files/latest/download">uget</a>)</li>
+
 		</ul>
 	</li>
 	<li>Przygotuj usługę S3
@@ -298,7 +299,7 @@
 	</li>
 	<li>Przeprowadź test prędkości pobierania
 		<ul>
-			<li>Doklei do adresu hosta dystrybucji CloudFront nazwę pliku (bez nazwy bucketa S3)</li>
+			<li>Doklej do adresu hosta dystrybucji CloudFront nazwę pliku (bez nazwy bucketa S3)</li>
 			<li>Pobierz kilka razy plik za pomocą managera pobierań</li>
 			<li>Zapisz średni czas pobierania</li>
 		</ul>
@@ -309,8 +310,8 @@
 	<li>Utwórz Security Group
 		<ul>
 			<li>Przejdź do usługi EC2</li>
-			<li>Z panelu po lewej stronie wybierz "Security Groups" (zakładka "NETWORK & SECURITY")</li>
-			<li>Kliknij niebieski przycisk "Create Security Group"</li>
+			<li>Z panelu po lewej stronie wybierz "Security Groups" (zakładka "Network & Security")</li>
+			<li>Kliknij pomarańczowy przycisk "Create Security Group"</li>
 			<li>Nadaj nazwę oraz opis (niestety również wymagany)</li>
 			<li>Kliknij niebieski przycisk "Create"</li>
 			<li>Puste Security Group nie przyjmuje żadnych połączeń</li>
@@ -325,7 +326,7 @@
 			<li>Wybierz opcję "Networking"->"Change Security Groups"</li>
 			<li>Odznacz domyślne Security Group</li>
 			<li>Zaznacz nowoutworzone Security Group</li>
-			<li>Kliknij niebieski przycisk "Assign Security Groups"</li>
+			<li>Kliknij pomarańczowy przycisk "Assign Security Groups"</li>
 		</ul>
 	</li>
 	<li>Sprawdź czy przypisanie nowych zasad przepuszcza pakiety ICMP (propagacja odebrania dostępu w SG trwa 5 min, restart vm i nadanie praw daje natychmiastowy efekt)</li>
@@ -351,8 +352,8 @@
 	</li>
 	<li>Przygotuj dwa EC2
 		<ul>
-			<li>Stwórz dwie EC2 wykorzystując obraz AMI „ObrazDoZadania6”</li>
-			<li>W kroku 3 "Configure Instance Details" możesz podać, ale instancji ma zostać utworzonych</li>
+			<li>Stwórz dwie EC2 wykorzystując obraz AMI „show_ip”</li>
+			<li>W kroku 3 "Configure Instance Details" możesz podać instancji ma zostać utworzonych</li>
 			<li>Podczas tworzenia EC2 wybierz nowoutworzone Security Group (z punktu 1)</li>
 		</ul>
 	</li>
@@ -362,44 +363,29 @@
 			<li>Z panelu po lewej wybierz "Load balancers" (zakładka "Load balancing")</li>
 			<li>Kliknij w niebieski przycisk "Create Load Balancer" w lewym górnym rogu</li>
 				<ol>
-					<li>Select load balancer type: "Application Load Balancer"</li>
-					<li>Step 1: Configure Load Balancer</li>
+					<li>Wybierz rodzaj Load Balancera: "Application Load Balancer"</li>
+					<li>Basic configuration</li>
+					<ul>						
+						<li>W polu "Load balancer name" wpisz wymaganą nazwę</li>
+						<li>Upewnij się, że pole "Internet-facing" jest zaznaczone</li>
+					</ul>
+					<li>Network mapping</li>
 					<ul>
-						<li>W polu "Name" wpisz wymaganą nazwę</li>
 						<li>Zaznacz na dole wszystkie Availability Zones (checkboxy)</li>
-						<li>Kliknij w szary przycisk "Next: Configure Security Settings" w prawym dolnym rogu</li>
 					</ul>
-					<li>Step 2: Security Settings</li>
-					<ul>
-						<li>Zignoruj ostrzeżenie "Improve your load balancer's security. Your load balancer is not using any secure listener."</li>
-						<li>Kliknij w szary przycisk "Next: Configure Security Groups" w prawym dolnym rogu</li>
-					</ul>
-					<li>Step 3: Configure Security Groups</li>
+					<li>Security groups</li>
 					<ul>
 						<li>Wybierz opcję "Select an existing security group"</li>
 						<li>Zaznacz nowoutworzone Security Group z punktu 1</li>
-						<li>Kliknij w szary przycisk "Next: Routing" w prawym dolnym rogu</li>
 					</ul>
-					<li>Step 4: Configure Routing</li>
+					<li>Listeners and routing</li>
 					<ul>
-						<li>W polu "Name" podaj dowolną nazwę dla nowej floty maszyn wirtualnych</li>
-						<li>(opcjonalne) Przyspiesz rejestrację maszyn w Load Balancerze
-							<ol>
-								<li>Rozwiń "Advanced health check settings"</li>
-								<li>Ustaw "Healthy threshold" na 2</li>
-								<li>Ustaw "Timeout" na 2</li>
-								<li>Ustaw "Interval" na 5</li>
-							</ol>
-						</li>
-						<li>Kliknij w szary przycisk "Next: Register Targets" w prawym dolnym rogu</li>
-					</ul>
-					<li>Step 5: Register Targets</li>
-					<ul>
+						<li>Pozostaw port 80 jako nasłuchujący</li>
+						<li>Utwórz flotę maszyn wirtualnych ("Target Group")</li>
 						<li>Z listy dostępnych EC2 wybierz te dwie utworzone w punkcie 2</li>
 						<li>Kliknij niebieski przycisk "Add to registered"</li>
-						<li>Kliknij w szary przycisk "Next: Add EC2 Instances" w prawym dolnym rogu</li>
 					</ul>
-					<li>Step 6: Review</li>
+					<li>Summary</li>
 					<ul>
 						<li>Przejrzyj podsumowanie konfiguracji Load Balancera</li>
 						<li>Kliknij w niebieski przycisk "Create" w prawym dolnym rogu</li>
