@@ -6,10 +6,9 @@
 	<li>Zaloguj się do AWS Console (użyj linku powyżej)</li>
 	<li>Przełącz się na jeden z regionów europejskich (prawy górny róg)
 		<ul>
-			<li>FPTrainingUser[1-4] wybierają Frankfurt</li>
-			<li>FPTrainingUser[5-8] wybierają Ireland</li>			
-			<li>FPTrainingUser[9-12] wybierają London</li>
-			<li>FPTrainingUser[13-16] wybierają Paris</li>			
+			<li>FPTrainingUser[1-5] wybierają Frankfurt</li>
+			<li>FPTrainingUser[6-10] wybierają Ireland</li>			
+			<li>FPTrainingUser[11-15] wybierają London</li>	
 		</ul>
 	</li>
 	<li>Z listy usług AWS ("Services" lewy górny róg) wybierz EC2 (sekcja "Compute")</li>
