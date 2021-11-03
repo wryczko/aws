@@ -211,7 +211,6 @@
 			<li>Otwórz dowolną linię poleceń np. cmd/git bash/powershell z uprawnieniami administratora</li>
 			<li>Wygeneruj plik testowy korzystając z <i>fsutil file createnew testfile 10000000</i></li>
 			<li>Pobierz (jeżeli nie masz) dowolny manager pobierań (np. <a href="https://sourceforge.net/projects/urlget/files/latest/download">uget</a>)</li>
-
 		</ul>
 	</li>
 	<li>Przygotuj usługę S3
