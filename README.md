@@ -1,14 +1,13 @@
 <h1>Zadania do szkolenia</h1>
 <a href="https://console.aws.amazon.com">Link do AWS jako root account</a><br>
-<a href="https://548688313986.signin.aws.amazon.com/console">Link do "subdomeny" AWS (dla użytkowników stworzonych przez roota)</a>
+<a href="https://212567597667.signin.aws.amazon.com/console">Link do "subdomeny" AWS (dla użytkowników stworzonych przez roota)</a>
 <h2>Zadanie 1 - PIERWSZA USŁUGA (maszyna wirtualna)</h2>
 <ol>
 	<li>Zaloguj się do AWS Console (użyj linku powyżej)</li>
 	<li>Przełącz się na jeden z regionów europejskich (prawy górny róg)
 		<ul>
-			<li>FPTrainingUser[1-3] wybierają Frankfurt</li>
-			<li>FPTrainingUser[4-6] wybierają Ireland</li>			
-			<li>FPTrainingUser[7-9] wybierają London</li>	
+			<li>RevolveTrainingUser[1-3] wybierają Frankfurt</li>
+			<li>RevolveTrainingUser[4-6] wybierają Ireland</li>	
 		</ul>
 	</li>
 	<li>Z listy usług AWS ("Services" lewy górny róg) wybierz EC2 (sekcja "Compute")</li>
