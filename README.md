@@ -190,7 +190,7 @@
 	<li>Przygotuj pliki testowe na lokalnym komputerze
 		<ul>			
 			<li>Otwórz dowolną linię poleceń np. cmd/git bash/powershell z uprawnieniami administratora</li>
-			<li>Wygeneruj plik testowy korzystając z <i>fsutil file createnew testfile 10000000</i></li>
+			<li>Wygeneruj plik testowy korzystając z <i>fsutil file createnew testfile 100000000</i></li>
 			<li>Pobierz (jeżeli nie masz) dowolny manager pobierań (np. <a href="https://sourceforge.net/projects/urlget/files/latest/download">uget</a>)</li>
 		</ul>
 	</li>
@@ -230,12 +230,14 @@
 					<ul>
 						<li>Kliknij "Add files"</li>
 						<li>Wybierz plik "testfile"</li>
-						<li>Rozwiń zakładkę "Permissions"</li>
-						<li>Zaznacz w opcjach "Predefined ACLs" radiobutton "Grant public-read access"</li>
-						<li>Zaznacz zgodę "I understand the risk of granting public-read access to the specified objects."</li>
-						<li>Kliknij pomarańczowy przycisk "Upload" w prawym dolnym rogu</li>
 					</ul>
 				</li>
+				<li>Rozwiń zakładkę "Permissions"
+					<ul>
+						<li>Zaznacz w opcjach "Predefined ACLs" radiobutton "Grant public-read access"</li>
+						<li>Zaznacz zgodę "I understand the risk of granting public-read access to the specified objects."</li>
+					</ul>
+				<li>Kliknij pomarańczowy przycisk "Upload" w prawym dolnym rogu</li>
 				<li>Upload: status
 					<ul>
 						<li>Poczekaj aż plik zostanie załadowany</li>
@@ -247,8 +249,7 @@
 	</li>
 	<li>Przeprowadź test czasu odpowiedzi
 		<ul>			
-			<li>Kliknij lewym przyciskiem myszy w plik w bucket'cie</li>
-			<li>Kliknij na plik</li>
+			<li>Kliknij plik w bucket'cie</li>
 			<li>Skopiuj link do pliku ("Object URL")</li>
 			<li>Wydziel z linku domenę (np. s3.ap-northeast-2.amazonaws.com)</li>
 			<li>Otwórz na komputerze lokalnym command line (CMD)</li>
