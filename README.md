@@ -53,7 +53,6 @@
 					<li>Zostaw wszystko domyślnie</li>
 				</ul>
 			</li>
-
 			<li>Summary
 				<ul>
 					<li>Sprawdź wprowadzoną konfigurację</li>
