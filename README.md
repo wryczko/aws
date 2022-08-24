@@ -14,69 +14,61 @@
 	<li>Wybierz „Instances” lub "Running instances", a następnie „Launch Instance”</li>
 	<li>Dobierz konfigurację
 		<ul>
-			<li>Step 1: Choose an Amazon Machine Image (AMI) - będą one bardziej szczegółowo omówione w innym zadaniu
+			<li>Name and tags
 				<ul>
-					<li>Znajdź "Windows Server 2019 Base"</li>
-					<li>Kliknij niebieski przycisk "Select"</li>
-				</ul>
-			</li>
-			<li>Step 2: Choose an Instance Type
-				<ul>
-					<li>Znajdź i zaznacz typ/moc instancji np. "t2.medium"</li>
-					<li>Kliknij szary przycisk "Next: Configure Instance Details"</li>
-				</ul>
-			</li>
-			<li>Step 3: Configure Instance Details
-				<ul>
-					<li>Zostaw wszystko domyślnie</li>
-					<li>Kliknij szary przycisk "Next: Add Storage"</li>
-				</ul>
-			</li>
-			<li>Step 4: Add Storage
-				<ul>
-					<li>Zostaw wszystko domyślnie</li>
-					<li>Kliknij szary przycisk "Next: Tag Instance"</li>
-				</ul>
-			</li>
-			<li>Step 5: Tag Instance
-				<ul>
-					<li>Kliknij szary przycisk "Add tag"</li>
-					<li>W polu "name" wpisz 'Name' (ten tag będzie użyty jako nazwa instancji)</li>
-					<li>W polu "value" podaj dowolną rozpoznawalną nazwę (będzie potrzebna do indentyfikacji na liście maszyn)</li>
+					<li>W polu "Name" podaj dowolną rozpoznawalną nazwę (będzie potrzebna do indentyfikacji na liście maszyn)</li>
 					<li>Kliknij szary przycisk "Next: Configure Security Group"</li>
 				</ul>
 			</li>
-			<li>Step 6: Configure Security Group - będą one bardziej szczegółowo omówione w innym zadaniu
+			<li>Application and OS Images (Amazon Machine Image)
 				<ul>
-					<li>Wybierz "Select an existing security group"</li>
-					<li>Wybierz Security Group o nazwie "default"</li>
-					<li>Kliknij niebieski przycisk "Review and Launch"</li>
+					<li>Zaznacz "Windows"</li>
 				</ul>
 			</li>
-			<li>Step 7: Review Instance Launch
+			<li>Instance type
+				<ul>
+					<li>Znajdź i zaznacz typ/moc instancji np. "t2.medium"</li>
+				</ul>
+			</li>
+			<li>Key pair (login)
+				<ul>
+					<li>Kliknij "Create a new key pair"</li>
+					<li>Dowolnie nazwij klucz</li>
+					<li>Kliknij przycisk "Create key pair"</li>
+					<li>Zauważ, że został pobrany plik pem z kluczem (NIE ZGUB GO! Będzie za chwilę potrzebny)</li>
+				</ul>
+			</li>
+			<li>Network settings
+				<ul>
+					<li>Zostaw wszystko domyślnie</li>
+				</ul>
+			</li>
+			<li>Configure storage
+				<ul>
+					<li>Zostaw wszystko domyślnie</li>
+				</ul>
+			</li>
+			<li>Advanced details
+				<ul>
+					<li>Zostaw wszystko domyślnie</li>
+				</ul>
+			</li>
+
+			<li>Summary
 				<ul>
 					<li>Sprawdź wprowadzoną konfigurację</li>
-					<li>Kliknij niebieski przycisk "Launch" (prawy dolny róg)</li>
+					<li>Kliknij przycisk "Launch instance" (prawy dolny róg)</li>
 				</ul>
 			</li>
 		</ul>
 	</li>
-	<li>Select an existing key pair or create a new pair
-		<ul>
-			<li>Wybierz "Create a new key pair"</li>
-			<li>Dowolnie nazwij klucz</li>
-			<li>Kliknij szary przycisk "Download key pair"</li>
-			<li>Zauważ, że został pobrany plik pem z kluczem (NIE ZGUB GO! Będzie za chwilę potrzebny)</li>
-		</ul>
-	</li>
-	<li>Kliknij niebieski przycisk "Launch Instances"</li>
-	<li>Przejdź do listy instancji np. klikając w niebieski przycisk "View Instances"</li>
+	<li>Przejdź do listy instancji np. klikając w przycisk "View all instances"</li>
 	<li>Zaloguj się do swojej maszyny wirtualnej
 		<ul>
 			<li>Znajdź i zaznacz swoją maszynę wirtualną</li>
 			<li>Kliknij szary przycisk „Connect” (nad listą instancji)</li>
 			<li>Wybierz zakładkę RDP Client "Get Password"</li>
-			<li>Pobierz plik RDP klikając w szary przycisk "Download Remote Desktop File"</li>
+			<li>Pobierz plik RDP klikając w przycisk "Download Remote Desktop File"</li>
 			<li>Pobierz hasło
 				<ul>					
 					<li>Kliknij w szary przycisk "Get Password"</li>
