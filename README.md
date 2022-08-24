@@ -109,11 +109,11 @@
 	</li>
 	<li>Sprawdź wydajność swojej maszyny wirtualnej
 		<ul>
-			<li>Pobierz i rozpakuj program CPU-Z z "https://download.cpuid.com/cpu-z/cpu-z_1.97-en.zip"</li>
+			<li>Pobierz i rozpakuj program CPU-Z z "https://download.cpuid.com/cpu-z/cpu-z_2.01-en.zip"</li>
 			<li>Zaloguj się do maszyny wirtualnej (opis w zadaniu 1) - zauważ, że zmienił się publiczny adres IP</li>
 			<li>Skopiuj i odpal plik cpuz_x64.exe</li>
 			<li>Uruchom test wydajności (zakładka "Bench", przycisk "Bench CPU")</li>
-			<li>Zapisz wynik testu</li>
+			<li>Zapisz wynik testu CPU Multi Thread</li>
 		</ul>
 	</li>
 	<li>Utwórz obraz maszyny wirtualnej (AMI)
@@ -122,8 +122,8 @@
 			<li>Zaznacz swoją instancję</li>
 			<li>Kliknij szary przycisk "Actions" (nad listą) lub kliknij prawym przyciskiem myszy na instancję</li>
 			<li>Wybierz opcję "Image and templates"->"Create Image"</li>
-			<li>W polu "Instance name" wpisz dowolną nazwę obrazu</li>
-			<li>Kliknij niebieski przycisk "Create Image"</li>
+			<li>W polu "Image name" wpisz dowolną nazwę obrazu</li>
+			<li>Kliknij przycisk "Create Image"</li>
 			<li>Przejdź do listy utworzonych obrazów klikając na panelu z lewej strony "AMIs" (zakładka "Images")</li>
 			<li>Poczekaj aż obraz będzie gotowy (3-5 min)</li>
 			<li>Maszyna źródłowa zostanie na chwilę wyłączona, ale sama się uruchomi</li>
@@ -133,14 +133,14 @@
 		<ul>
 			<li>Przejdź do listy instancji EC2</li>
 			<li>Kliknij „Launch instances”</li>
-			<li>Step 1: Choose an Amazon Machine Image (AMI)
+			<li>Application and OS Images (Amazon Machine Image)
 				<ul>
 					<li>Wybierz z lewego panelu "My AMIs"</li>
 					<li>Znajdź swój nowoutworzony obraz</li>
 					<li>Kliknij pomarańczowy przycisk "Select"</li>
 				</ul>
 			</li>
-			<li>Step 2: Choose an Instance Type
+			<li>Instance type
 				<ul>
 					<li>Wybierz mocniejszą lub słabszą maszynę (liczba procesorów)</li>
 				</ul>
@@ -149,25 +149,16 @@
 			<li>Tym razem nie musisz tworzyć nowego pliku-klucza. Możesz wybrać istniejący.</li>
 		</ul>
 	</li>
-	<li>Zacznij sprawdzać dostępność maszyny wirtualnej
-		<ul>
-			<li>Sprawdź adres IP (EIP)</li>
-			<li>Na lokalnym komputerze uruchom command line (CMD)</li>
-			<li>Użyj narzędzia ping: "ping {IP} -t"</li>
-			<li>Nie zamykaj konsoli do końca zadania</li>
-		</ul>
-	</li>
 	<li>Przełącz EIP (publiczny IP) między maszynami wirtualnymi
 		<ul>
 			<li>Przejdź do listy EIP</li>
 			<li>Kliknij szary przycisk "Actions" (nad listą) lub kliknij prawym przyciskiem myszy na EIP</li>
-			<li>Wybierz opcję "Associate Address"</li>
+			<li>Wybierz opcję "Associate Elastic IP address"</li>
 			<li>Kliknij w textbox "Instance", znajdź i wybierz swoją nową (mocniejszą) instancję</li>			
 			<li>Zaznacz opcję "Allow Elastic IP to be reassociated if already attached"</li>
-			<li>Kliknij niebieski przycisk "Associate"</li>
+			<li>Kliknij przycisk "Associate"</li>
 		</ul>
 	</li>
-	<li>Zaobserwuj w command line, czy użytkownik odczuje "skalowanie" (czy VM przestanie odpowiadać na pakiety ICMP)</li>
 	<li>Sprawdź wydajność swojej nowej (mocniejszej) maszyny wirtualnej
 		<ul>
 			<li>Zaloguj się do maszyny przez RDP (hasło jest takie samo jak do oryginalnej maszyny)</li>
@@ -177,10 +168,10 @@
 		</ul>
 	</li>
 	<li>Porównaj wyniki obu testów maszyn wirtualnych (słabszej i mocniejszej)</li>
-	<li>Usuń słabszą maszynę (posprzątaj)
+	<li>Usuń maszyny i EIP (posprzątaj)
 		<ul>
 			<li>Przejdź do listy instancji</li>
-			<li>Zaznacz swoją starą (słabszą) instancję</li>
+			<li>Zaznacz swoje instancje</li>
 			<li>Kliknij szary przycisk "Actions" (nad listą) lub kliknij prawym przyciskiem myszy na instancję</li>
 			<li>Wybierz opcję "Instance State"->"Terminate"</li>
 			<li>Potwierdź działanie klikając niebieski przycisk "Yes, terminate"</li>
@@ -206,18 +197,26 @@
 	<li>Przygotuj usługę S3
 		<ul>
 			<li>Z listy usług AWS wybierz S3 (kategoria "Storage")</li>
-			<li>Kliknij w pomarańczowy przycisk "Create Bucket" w lewym górnym rogu</li>
+			<li>Kliknij w przycisk "Create Bucket" w prawym górnym rogu</li>
 			<li>Skonfiguruj bucket
 				<ol>
-					<li>Name and region
+					<li>General configuration
 						<ul>
-							<li>W polu "Bucket Name" podaj unikalną (na skalę AWS) nazwę bucketa</li>
+							<li>W polu "Bucket name" podaj unikalną (na skalę AWS) nazwę bucketa</li>
 							<li>Wybierz jakiś odległy region w Asia Pacific (Sydney lub Seul)</li>
+						</ul>
+					</li>
+					<li>Object Ownership
+						<ul>
+							<li>Zaznacz checkbox "ACLs enabled"</li>
+						</ul>
+					</li>
+					<li>Block Public Access settings for this bucket
+						<ul>
 							<li>Odznacz checkbox "Block all public access"</li>
 							<li>Zaznacz zgodę "I acknowledge that the current settings might result in this bucket and the objects within becoming public."</li>
-							<li>Kliknij pomarańczowy przycisk "Create bucket"</li>
 						</ul>
-					</li>					
+					</li>												<li>Kliknij pomarańczowy przycisk "Create bucket"</li>
 				</ol>
 			</li>			
 		</ul>
