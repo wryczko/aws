@@ -295,17 +295,17 @@
 </ol>
 <h2>ZADANIE 5 – SECURITY GROUPS - FIREWALL</h2>
 <ol>
-	<li>Utwórz Security Group
+	<li>Utwórz instancję EC2 (Linux)</li>
+	<li>Utwórz puste Security Group (Firewall)
 		<ul>
 			<li>Przejdź do usługi EC2</li>
 			<li>Z panelu po lewej stronie wybierz "Security Groups" (zakładka "Network & Security")</li>
-			<li>Kliknij pomarańczowy przycisk "Create Security Group"</li>
+			<li>Kliknij przycisk "Create Security Group"</li>
 			<li>Nadaj nazwę oraz opis (niestety również wymagany)</li>
 			<li>Kliknij niebieski przycisk "Create"</li>
 			<li>Puste Security Group nie przyjmuje żadnych połączeń</li>
 		</ul>
 	</li>
-	<li>Zacznij wysyłać pakiety ICMP do EC2 (ping -t)</li>
 	<li>Przypisz nowe Security Group do EC2
 		<ul>
 			<li>Przejdź do listy instancji</li>
@@ -314,19 +314,19 @@
 			<li>Wybierz opcję "Networking"->"Change Security Groups"</li>
 			<li>Odznacz domyślne Security Group</li>
 			<li>Zaznacz nowoutworzone Security Group</li>
-			<li>Kliknij pomarańczowy przycisk "Assign Security Groups"</li>
+			<li>Kliknij przycisk "Assign Security Groups"</li>
 		</ul>
 	</li>
-	<li>Sprawdź czy przypisanie nowych zasad przepuszcza pakiety ICMP (propagacja odebrania dostępu w SG trwa 5 min, restart vm i nadanie praw daje natychmiastowy efekt)</li>
+	<li>Zacznij wysyłać pakiety ICMP do EC2 (ping -t) do nowoutworzonej instancji EC2</li>
 	<li>Skonfiguruj Security Group
 		<ul>
 			<li>Znajdź i zaznacz nowoutworzone Security Group</li>
 			<li>Kliknij szary przycisk "Actions" lub kliknij prawym przyciskiem myszyny na Security Group</li>
 			<li>Wybierz opcję "Edit inbound rules" lub kliknij "Edit" w zakładce "Inbound" w panelu na dole</li>
 			<li>Wybierz Type "All ICMP"</li>
-			<li>Wybierz Source "My IP" (zostanie wykorzystany IP sieci FP)</li>
+			<li>Wybierz Source "My IP" (zostanie wykorzystany IP sieci Revolve)</li>
 			<li>Kliknij niebieski przycisk "Save"</li>
 		</ul>
 	</li>
-	<li>Sprawdź czy przypisanie nowych zasad przepuszcza pakiety ICMP</li>
+	<li>Sprawdź czy przypisanie nowych zasad przepuszcza pakiety ICMP (propagacja odebrania dostępu w SG trwa 5 min, restart vm i nadanie praw daje natychmiastowy efekt)</li>
 </ol>
